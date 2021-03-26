@@ -1,5 +1,5 @@
 # PROGRAMING AND SCRIPTING
 # PROJECT
-## AUTOHOR: ANTE DUJIC
+## AUTHOR: ANTE DUJIC
 
 This repostiory contains
