@@ -1,1 +1,5 @@
-# pands-project2021
+# PROGRAMING AND SCRIPTING
+# PROJECT
+## AUTOHOR: ANTE DUJIC
+
+This repostiory contains
