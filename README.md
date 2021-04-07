@@ -2,6 +2,8 @@
 # PROJECT
 ## AUTHOR: ANTE DUJIC
 
+This repository contains the code written as a project for Programing and Scripting Module. The project is to show how Pyton can be used to analyse the Iris flower data set.
+
 ## **INTRODUCTION**
 
 The Iris flower data set, aslo called Fisher's Iris data set, is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in 1936. The dataset consists of 150 instances, made up of 50 samples each of 3 species of iris.
@@ -17,7 +19,7 @@ Based on the combination of these four features, we can distinguish 3 species of
 2. Iris Versicolour
 3. Iris Virginica
 
-The dataset is often used in data mining, classification and clustering examples and to test algorithms.
+The dataset is often used in data mining, classification and clustering examples and to test algorithms. The aim of this project is to analyse the given data using Python.
 
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
