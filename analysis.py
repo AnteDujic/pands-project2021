@@ -7,11 +7,12 @@ import pandas as pd
 data = pd.read_csv('irisData.csv')
 
 def dataLayout():
-    print ("This data set consists of {} samples, grouped by {} different variables:".format ((data.shape[0]), (data.shape[1])))
+    x = ("This data set consists of {} samples, grouped by {} different variables:\n".format ((data.shape[0]), (data.shape[1])))
     
-    for col in data.columns:
-        print (col)
+    x += "\n".join (data.columns)
 
-    print ("The general layout of the data: \n{}\n*First 10 rows \n{}\n*Random 10 rows" .format ((data.head(10)), data.sample(10)))
+    x += ("\n\nThe general layout of the data: \n\n{}\n*First 10 rows \n\n{}\n*Random 10 rows" .format ((data.head(10)), data.sample(10)))
+    return x
 
-dataLayout()
+with open ("layout.txt", "wt") as f:
+    f.write (str (dataLayout()))
