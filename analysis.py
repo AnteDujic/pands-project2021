@@ -14,14 +14,23 @@ def dataLayout():
     return l
 
 layout = dataLayout()
-species = data.groupby ("species").size()
 with open ("layout.txt", "wt") as f:
-    f.write (str (layout) + "\n\n")
-    f.write (str (species))
- 
+    f.write (str (layout))
+
+speciesNames = data.groupby ("species").size().to_string()
+speciesDetail = (data.describe(include = ["object"])).loc [["count", "unique", "freq"]]
+dataSummary = data.describe ()
+dataCorrelation = data.corr()
+
+with open ("analysis.txt", "wt") as f:
+    f.write ("Species Info:\n" + str (speciesDetail) + "\n\n")
+    f.write ("Species of Iris:\n" + str (speciesNames) + "\n\n")
+    f.write ("Data Summary:\n" + str (dataSummary) + "\n\n")
+    f.write ("Data correlation:\n" + str (dataCorrelation))
+
+
 """
-speciesColumn = (data.describe(include = ["object"]))
-print (speciesColumn.loc [["count", "unique", "freq"]])
+
 
 speciesName = data.groupby ("species").describe().transpose()
 print (speciesName)
