@@ -5,6 +5,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 
 # Read the dataset
@@ -40,23 +41,14 @@ sepalLength = data ["sepal_length"]
 sepalWidth = data ["sepal_width"]
 petalLength = data["petal_length"]
 petalWidth = data ["petal_width"]
+species = data ["species"]
 
-plt.hist (sepalLength, bins = 20, color = "red")
+
+# seaborn (better solution?)
+fig, axs = plt.subplots(2, 2)
+figsize = (20,20)
+sns.histplot (data, x = "sepal_length", hue = "species", ax = axs[0,0], multiple = "stack")
+sns.histplot (data, x = "sepal_width", hue = "species", ax = axs[0,1], multiple = "stack")
+sns.histplot (data, x = "petal_length", hue = "species", ax = axs[1,0], multiple = "stack")
+sns.histplot (data, x = "petal_width", hue = "species", ax = axs[1,1], multiple = "stack")
 plt.show()
-
-plt.hist (sepalWidth, bins = 20, color = "green")
-plt.show()
-
-plt.hist (petalLength, bins = 20, color = "blue")
-plt.show()
-
-plt.hist (petalWidth, bins = 20, color = "yellow")
-plt.show()
-
-
-
-# Other code - to be considered
-"""
-speciesName = data.groupby ("species").describe().transpose()
-print (speciesName)
-"""
