@@ -38,7 +38,7 @@ with open ("analysis.txt", "wt") as f:
 
 # Histogram (to be customized)
 fig, axs = plt.subplots(2, 2)
-figsize = (20,20)
+figsize = (20,20) # not needed
 fig.suptitle ("IRIS FEATURE DISTRIBIUTION - by species", size = "xx-large")
 sns.histplot (data, x = "Sepal Length (cm)", hue = "Iris Species", ax = axs[0,0], multiple = "stack")
 axs[0,0].set_title ("SEPAL LENGTH")
@@ -48,4 +48,18 @@ sns.histplot (data, x = "Petal Length (cm)", hue = "Iris Species", ax = axs[1,0]
 axs[1,0].set_title ("PETAL LENGTH")
 sns.histplot (data, x = "Petal Width (cm)", hue = "Iris Species", ax = axs[1,1], multiple = "stack")
 axs[1,1].set_title ("PETAL WIDTH")
+plt.show()
+
+# Scatterplot (to be customized)
+fig, axs = plt.subplots(2, 3)
+sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Sepal Width (cm)", hue = "Iris Species", ax = axs[0,0])
+sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Length (cm)", hue = "Iris Species", ax = axs[0,1])
+sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", ax = axs[1,0])
+sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Length (cm)", hue = "Iris Species", ax = axs[1,1])
+sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Width (cm)", hue = "Iris Species", ax = axs[0,2])
+sns.scatterplot (data = data, x = "Petal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", ax = axs[1,2])
+plt.show()
+
+# Pairplot (use as a summary of all plots)
+sns.pairplot (data, hue = "Iris Species", diag_kind = "hist")
 plt.show()
