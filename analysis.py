@@ -13,7 +13,6 @@ data = pd.read_csv('irisData.csv')
 data.columns = ["Sepal Length (cm)", "Sepal Width (cm)", "Petal Length (cm)", "Petal Width (cm)", "Iris Species"]
 
 # Summary data
-
 with open ("summary.txt", "wt") as f:
     f.write ("\nThis data set consists of {} samples, grouped by {} different variables.".format ((data.shape[0]), (data.shape[1])) + "\n\n")
     f.write ("Dataset variables are:\n" + "\n".join (data.columns) + "\n\n")
@@ -25,56 +24,73 @@ with open ("summary.txt", "wt") as f:
     f.write ("Data Summary by species:\n" + str (data.groupby ("Iris Species").describe().transpose()) + "\n\n")
     f.write ("Data correlation:\n" + str (data.corr()))
 
+# Heat map
+def correlation():
+    sns.heatmap (data = data.corr(), square = True, annot = True)
+    plt.xticks (rotation = 45)
+    plt.tight_layout()
+    #plt.savefig ("correlation.png")
+    plt.show()
+
+colors = ["#856088", "#B8860B", "#556B2F"]
+
 # Bar plot
-figsize = (20,20)
-speciesNumber = data.groupby ("Iris Species").size()
-speciesNumber.plot.bar (color = ["green", "red", "blue"])
-plt.tight_layout()
-#plt.savefig ("species_bar.png")
-plt.show()
+def speciesPlot():
+    speciesNumber = data.groupby ("Iris Species").size()
+    speciesNumber.plot.bar (color = colors)
+    plt.tight_layout()
+    #plt.savefig ("speciesBar.png")
+    plt.show()
+    speciesNumber.plot.pie (autopct="%.1f%%", colors = colors).set_ylabel("")
+    #plt.savefig ("speciesPie.png")
+    plt.show()
 
+# Histograms
+def histograms():
+    sns.histplot (data, x = "Sepal Length (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("SEPAL LENGTH")
+    #plt.savefig ("Sepal_length.png")
+    plt.show()
+    sns.histplot (data, x = "Sepal Width (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("SEPAL WIDTH")
+    #plt.savefig ("Sepal_width.png")
+    plt.show()
+    sns.histplot (data, x = "Petal Length (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("PETAL LENGTH")
+    #plt.savefig ("Petal_length.png")
+    plt.show()
+    sns.histplot (data, x = "Petal Width (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("PETAL WIDTH")
+    #plt.savefig ("Petal_width.png")
+    plt.show()
 
-# Histogram (to be customized)
+# Scatterplots
+def scatterlots():
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Sepal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs SEPAL WIDTH")
+    #plt.savefig ("Sepal_length_vs_Sepal_width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Length (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs PETAL LENGTH")
+    #plt.savefig ("Sepal_length_vs_Petal_length.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs PETAL WIDTH")
+    #plt.savefig ("Sepal_length_vs_Petal_Width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Length (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL WIDTH vs PETAL LENGTH")
+    #plt.savefig ("Sepal_Width_vs_Petal_length.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL WIDTH vs PETAL WIDTH")
+    #plt.savefig ("Sepal_width_vs_Petal_width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Petal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("PETAL LENGTH vs PETAL WIDTH")
+    #plt.savefig ("scatterplot.png")
+    plt.show()
 
-figsize = (20,20)
-sns.histplot (data, x = "Sepal Length (cm)", hue = "Iris Species", multiple = "stack").set_title ("SEPAL LENGTH")
-plt.show()
-sns.histplot (data, x = "Sepal Width (cm)", hue = "Iris Species", multiple = "stack").set_title ("SEPAL WIDTH")
-plt.show()
-sns.histplot (data, x = "Petal Length (cm)", hue = "Iris Species", multiple = "stack").set_title ("PETAL LENGTH")
-plt.show()
-sns.histplot (data, x = "Petal Width (cm)", hue = "Iris Species", multiple = "stack").set_title ("PETAL WIDTH")
-#plt.savefig ("histograms.png")
-plt.show()
+# Pairplot
+def pairplot():
+    sns.pairplot (data, hue = "Iris Species", diag_kind = "hist", palette = colors)
+    #plt.savefig ("pairplot.png")
+    plt.show()
 
-# Scatterplot (to be customized)
-figsize = (20,20)
-sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Sepal Width (cm)", hue = "Iris Species").set_title ("SEPAL LENGTH vs SEPAL WIDTH")
-plt.show()
-sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Length (cm)", hue = "Iris Species").set_title ("SEPAL LENGTH vs PETAL LENGTH")
-plt.show()
-sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species").set_title ("SEPAL LENGTH vs PETAL WIDTH")
-plt.show()
-sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Length (cm)", hue = "Iris Species").set_title ("SEPAL WIDTH vs PETAL LENGTH")
-plt.show()
-sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Width (cm)", hue = "Iris Species").set_title ("SEPAL WIDTH vs PETAL WIDTH")
-plt.show()
-sns.scatterplot (data = data, x = "Petal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species").set_title ("PETAL LENGTH vs PETAL WIDTH")
-#plt.savefig ("scatterplot.png")
-plt.show()
+# Calling functions
 
-# Pairplot (use as a summary of all plots)
-figsize = (20,20)
-sns.pairplot (data, hue = "Iris Species", diag_kind = "hist")
-#plt.savefig ("pairplot.png")
-plt.show()
-
-"""
-speciesNumber = data.groupby ("Iris Species").size()
-speciesNumber.plot.bar (color = ["green", "red", "blue"])
-plt.show()
-
-g = sns.PairGrid (data = data, vars = ["Sepal Length (cm)", "Sepal Width (cm)"], hue = "Iris Species")
-g.map (sns.scatterplot)
-plt.show()
-"""
+correlation()
+speciesPlot()
+histograms()
+scatterlots()
+pairplot()
