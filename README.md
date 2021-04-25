@@ -218,7 +218,7 @@ Each visual represantation (plot) has been defined as a function using *def* key
 A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice, is proportional to the quantity it represents.
 
 *CODE:*
-```
+```python
 def speciesPlot():
     speciesNumber = data.groupby ("Iris Species").size()
     speciesNumber.plot.bar (color = colors)
@@ -229,8 +229,8 @@ def speciesPlot():
     plt.savefig ("speciesPie.png")
     plt.show()
 ```
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
+![alt text 1](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png)
+![alt text 2](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
 
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
