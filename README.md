@@ -229,8 +229,7 @@ def speciesPlot():
     plt.savefig ("speciesPie.png")
     plt.show()
 ```
-![alt text 1](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png)
-![alt text 2](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
+![alt text 1](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png) ![alt text 2](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
 
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
