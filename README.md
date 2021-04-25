@@ -205,6 +205,33 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 
 ## **DATASET VISUALISATION**
 
+Python, with its libarires, is a powerful tool for a data visualisation. There are multiple ways and aproaches for this but the following ones were deemed the best for the given data:
+- bar and pie plot
+- correlation heat map
+- histograms
+- scatter plots 
+
+Each visual represantation (plot) has been defined as a function using *def* keyword. Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette that represents the Iris flower, etc.) Where there are multiple options available in Python for visual (plot) customization minimum number was used to keep the code short and tidy.
+
+### BAR PLOT & PIE PLOT
+
+A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice, is proportional to the quantity it represents.
+
+*CODE:*
+```
+def speciesPlot():
+    speciesNumber = data.groupby ("Iris Species").size()
+    speciesNumber.plot.bar (color = colors)
+    plt.tight_layout()
+    plt.savefig ("speciesBar.png")
+    plt.show()
+    speciesNumber.plot.pie (autopct="%.1f%%", colors = colors).set_ylabel("")
+    plt.savefig ("speciesPie.png")
+    plt.show()
+```
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
+
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://archive.ics.uci.edu/ml/datasets/iris
