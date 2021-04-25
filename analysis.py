@@ -26,13 +26,25 @@ with open ("summary.txt", "wt") as f:
 
 # Heat map
 def correlation():
-    sns.heatmap (data = data.corr(), square = True, annot = True)
+    sns.heatmap (data = data.corr(), square = True, annot = True, cmap = "mako")
     plt.xticks (rotation = 45)
     plt.tight_layout()
     #plt.savefig ("correlation.png")
     plt.show()
 
-colors = ["#856088", "#B8860B", "#556B2F"]
+colors = ["#FFB200", "#9FA91F", "#702963"]
+
+# Box plot
+def boxPlot():
+    fig, axs = plt.subplots(1, 4, figsize = (12,7))
+    fig.suptitle ("IRIS FLOWER BOXPLOT", size = "xx-large")
+    sns.boxplot (data = data, x = "Iris Species", y = "Sepal Length (cm)", palette = colors, ax = axs[0])
+    sns.boxplot (data = data, x = "Iris Species", y = "Sepal Width (cm)", palette = colors, ax = axs[1])
+    sns.boxplot (data = data, x = "Iris Species", y = "Petal Length (cm)", palette = colors, ax = axs[2])
+    sns.boxplot (data = data, x = "Iris Species", y = "Petal Width (cm)", palette = colors, ax = axs[3])
+    plt.tight_layout()
+    #plt.savefig ("boxPlots.png")
+    plt.show()
 
 # Bar plot
 def speciesPlot():
@@ -88,8 +100,9 @@ def pairplot():
     plt.show()
 
 # Calling functions
-correlation()
-speciesPlot()
-histograms()
-scatterlots()
-pairplot()
+#correlation()
+boxPlot()
+#speciesPlot()
+#histograms()
+#scatterlots()
+#pairplot()
