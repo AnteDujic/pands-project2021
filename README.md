@@ -30,6 +30,11 @@ Many others have done the analysis of the Iris Dataset before and it has been ap
 
 Python Libraries are a set of useful functions that eliminate the need for writing codes from scratch. There are over 137,000 python libraries present today. Libraries used for this analysis are listed below.
 
+- **NumPy** - the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and tools for working with these arrays.
+- **Pandas** -  a library for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+- **Matplotlib.pyplot** - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.
+- **Seaborn** - a data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+
 *CODE:*
 ```python
 import numpy as np
@@ -38,12 +43,19 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-- **NumPy** - the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and tools for working with these arrays.
-- **Pandas** -  a library for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-- **Matplotlib.pyplot** - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.
-- **Seaborn** - a data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* statement, at the start of the program. Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
 
+### **DATASET IMPORT**
 
+Program starts by importing the dataset. The dataset used for this analysis is stored in this repository.
+
+*CODE:*
+```python
+data = pd.read_csv('irisData.csv')
+data.columns = ["Sepal Length (cm)", "Sepal Width (cm)", "Petal Length (cm)", "Petal Width (cm)", "Iris Species"]
+```
+
+Dataset gets imported using *read_csv* from *pandas*. Because the irisData.csv file is located in the same directory as the program analysis.py, it is not necessary to define the .csv file path and only name is used to read the file. Different names were assigned to the columns. This is done for the visual purposes only (.txt file and plots) and those names will be used further in the code.
 
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
