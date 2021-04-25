@@ -88,7 +88,6 @@ def pairplot():
     plt.show()
 
 # Calling functions
-
 correlation()
 speciesPlot()
 histograms()
