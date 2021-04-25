@@ -77,24 +77,12 @@ with open ("summary.txt", "wt") as f:
 To create a file and work with it *open()* function is used. The best practice is to use the *with open()* format, as this closes the file automatically at the end. It is also specified that this file is opened for writing (*w* - also creates the file if it doesn't exist) and it is to be opened in text mode (*t*). *f* is assigned to this file and it is used further in the code. File name created and the one to be written to is defined as *summary.txt*. To write to this file *write()* method is used. The methods to get specific data from the dataset and its analysis is listed below. To get a better visualisation and make the .txt file easily readable, certain options are used in combinaton with those methods.
 
 - *shape()* returns the shape of an array (dataset) - *shape[0]* gives the number of rows, and *shape[1]* the number of columns
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
 This data set consists of 150 samples, grouped by 5 different variables.
 
 ```
 
-</details>
-
-- *columns()* gives the names of the columns. *join()* takes all items and joins them into one string and is used here to list column names in a tidy fashion
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
+- *columns()* gives the names of the columns. *join()* takes all items and joins them into one string and is used here to list column names in a tidy fashion.
 ```
 Dataset variables are:
 Sepal Length (cm)
@@ -104,14 +92,7 @@ Petal Width (cm)
 Iris Species
 ```
 
-</details>
-
 - *describe()* gives the summary of the numeric and object values in the given dataset. For the object values it is the count number (*count*), the number of unique values (*unique*), values frequency (*freq*) and the most common value (*top*). *describe(include = ["object"])* includes object data only (strings or timestamps) - "Iris Species" column. *loc* is used to access a group of columns (or rows). Only *count*, *unique* and *top* values are specified for the output as the *top* return different values every time program is run, due to the same number of all 3 values (species).
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
        Iris Species
 count           150
@@ -119,14 +100,7 @@ unique            3
 freq             50
 ```
 
-</details>
-
 - *groupby* is used to specify the group of values, Iris Species in this case. *size()* is used to count the elements of the given data. *to_string()* is used to remove "dtype: int64" from the output, as this information is considered irrelevant for a common user, who this analysis is designed for.
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
 Iris Species
 setosa        50
@@ -134,14 +108,7 @@ versicolor    50
 virginica     50
 ```
 
-</details>
-
 - *head()* returns the specified number of rows - 10 in this case.
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
 Iris Dataset - first 10 rows:
    Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm) Iris Species
@@ -157,14 +124,7 @@ Iris Dataset - first 10 rows:
 9                4.9               3.1                1.5               0.1       setosa
 ```
 
-</details>
-
 - *sample()* returns the specified length in random fashion - 10 in this case
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
 Iris Dataset - random 10 rows:
      Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm) Iris Species
@@ -180,14 +140,7 @@ Iris Dataset - random 10 rows:
 103                6.3               2.9                5.6               1.8    virginica
 ```
 
-</details>
-
 - *describe()* default output is summary of the numeric data. It shows the count of variables and calculates the mean, standard deviation, minimum and maximum value, and also 1st, 2nd and 3rd percentile.
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
 ```
 Data Summary:
        Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm)
@@ -201,14 +154,7 @@ min             4.300000          2.000000           1.000000          0.100000
 max             7.900000          4.400000           6.900000          2.500000
 ```
 
-</details>
-
-- *data.groupby ("Iris Species").describe().transpose()*
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
+- *groupby()* and *describe()* paired together gave the *describe()* output as described above, but grouped by Iris Species. *transpose()* is used to swap rows and columns. This was done for visual purposes only.
 ```
 Data Summary by species:
 Iris Species                setosa  versicolor  virginica
@@ -246,14 +192,7 @@ Petal Width (cm)  count  50.000000   50.000000  50.000000
                   max     0.600000    1.800000   2.500000
 ```
 
-</details>
-
-- *corr()* is used to find correlation between numeric values - Sepal Length (cm), Sepal Width (cm), Petal Length (cm), Petal Width (cm)
-
-<details>
-<summary>summary.txt</summary>
-<br>
-
+- *corr()* is used to find correlation between numeric values - Sepal Length (cm), Sepal Width (cm), Petal Length (cm), Petal Width (cm).
 ```
 Data correlation:
                    Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm)
@@ -264,7 +203,6 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 
 ```
 
-</details>
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://archive.ics.uci.edu/ml/datasets/iris
