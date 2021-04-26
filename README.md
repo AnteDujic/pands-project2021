@@ -231,8 +231,8 @@ def speciesPlot():
 ```
 
 <p float="left">
-  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="450" />
-  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="450" /> 
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="400" />
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="400" /> 
 </p>
 
 Both the bar and the pie plot confirm what we've seen in the data before, and it is that the 3 species of the Iris Flower are Setosa, Versicolor and Virginica and there is an equal number of each, 50. Each species represent 33,33% of the total number of flowers.
