@@ -19,6 +19,8 @@ Based on the combination of these four features, we can distinguish 3 species of
 2. Iris Versicolour
 3. Iris Virginica
 
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Iris%20Flowers.png)
+
 The dataset is often used in data mining, classification and clustering examples and to test algorithms.
 
 
