@@ -90,7 +90,7 @@ def scatterlots():
     plt.savefig ("Sepal_width_vs_Petal_width.png")
     plt.show()
     sns.scatterplot (data = data, x = "Petal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("PETAL LENGTH vs PETAL WIDTH")
-    plt.savefig ("scatterplot.png")
+    plt.savefig ("Petal_Length_vs_Petal_width.png")
     plt.show()
 
 # Pairplot

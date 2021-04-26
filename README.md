@@ -229,16 +229,48 @@ def speciesPlot():
     plt.savefig ("speciesPie.png")
     plt.show()
 ```
-![alt text 1](https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png) ![alt text 2](https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png)
+
+<p float="left">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="500" />
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="500" /> 
+</p>
 
 ## **REFERENCES**
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://archive.ics.uci.edu/ml/datasets/iris
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
-
 https://www.mygreatlearning.com/blog/open-source-python-libraries/
 https://cs231n.github.io/python-numpy-tutorial/#numpy
 https://en.wikipedia.org/wiki/Pandas_(software)
 https://matplotlib.org/
 https://matplotlib.org/stable/tutorials/introductory/pyplot.html
 
+### BOXPLOT
+
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
+
+### CORRELATION HEAT MAP
+
+Heat map 
+
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png)
+
+### HISTOGRAMS
+
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_length.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png)
+
+### SCATTERPLOTS
+
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_Width.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_Width_vs_Petal_length.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width_vs_Petal_width.png)
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png)
+
+### PAIRPLOT
+
+![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png)
