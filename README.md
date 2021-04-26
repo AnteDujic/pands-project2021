@@ -231,31 +231,68 @@ def speciesPlot():
 ```
 
 <p float="left">
-  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="500" />
-  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="500" /> 
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="450" />
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="450" /> 
 </p>
 
-## **REFERENCES**
-https://en.wikipedia.org/wiki/Iris_flower_data_set
-https://archive.ics.uci.edu/ml/datasets/iris
-http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
-https://www.mygreatlearning.com/blog/open-source-python-libraries/
-https://cs231n.github.io/python-numpy-tutorial/#numpy
-https://en.wikipedia.org/wiki/Pandas_(software)
-https://matplotlib.org/
-https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+Both the bar and the pie plot confirm what we've seen in the data before, and it is that the 3 species of the Iris Flower are Setosa, Versicolor and Virginica and there is an equal number of each, 50. Each species represent 33,33% of the total number of flowers.
 
 ### BOXPLOT
+
+Box plots are useful as they provide a visual summary of the data enabling researchers to quickly identify mean values, the dispersion of the data set, and signs of skewness. Data shown in the box plot are the minimum score, first (lower) quartile, median, third (upper) quartile, and maximum score.
+
+*CODE:*
+```python
+def boxPlot():
+    fig, axs = plt.subplots(1, 4, figsize = (12,7))
+    fig.suptitle ("IRIS FLOWER BOXPLOT", size = "xx-large")
+    sns.boxplot (data = data, x = "Iris Species", y = "Sepal Length (cm)", palette = colors, ax = axs[0])
+    sns.boxplot (data = data, x = "Iris Species", y = "Sepal Width (cm)", palette = colors, ax = axs[1])
+    sns.boxplot (data = data, x = "Iris Species", y = "Petal Length (cm)", palette = colors, ax = axs[2])
+    sns.boxplot (data = data, x = "Iris Species", y = "Petal Width (cm)", palette = colors, ax = axs[3])
+    plt.tight_layout()
+    plt.savefig ("boxPlots.png")
+    plt.show()
+```
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
 
 ### CORRELATION HEAT MAP
 
-Heat map 
+A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show in a glance which variables are correlated and to what degree.
+
+*CODE:*
+```python
+def correlation():
+    sns.heatmap (data = data.corr(), square = True, annot = True, cmap = "mako")
+    plt.xticks (rotation = 45)
+    plt.tight_layout()
+    plt.savefig ("correlation.png")
+    plt.show()
+```
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png)
 
 ### HISTOGRAMS
+
+A histogram is an approximate representation of the distribution of numerical data.  It is similar to a Bar Plot, but a histogram groups numbers into ranges. The height of each bar shows how many fall into each range.
+
+*CODE:*
+```python
+def histograms():
+    sns.histplot (data, x = "Sepal Length (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("SEPAL LENGTH")
+    plt.savefig ("Sepal_length.png")
+    plt.show()
+    sns.histplot (data, x = "Sepal Width (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("SEPAL WIDTH")
+    plt.savefig ("Sepal_width.png")
+    plt.show()
+    sns.histplot (data, x = "Petal Length (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("PETAL LENGTH")
+    plt.savefig ("Petal_length.png")
+    plt.show()
+    sns.histplot (data, x = "Petal Width (cm)", hue = "Iris Species", multiple = "stack", palette = colors).set_title ("PETAL WIDTH")
+    plt.savefig ("Petal_width.png")
+    plt.show()
+```
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
@@ -263,6 +300,31 @@ Heat map
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png)
 
 ### SCATTERPLOTS
+
+A scatterplot is a type of data display that shows the relationship between two numerical variables. Each member of the dataset gets plotted as a point whose (x, y) coordinates relates to its values for the two variables. Scatter plots show how much one variable is affected by another.
+
+*CODE:*
+```python
+def scatterlots():
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Sepal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs SEPAL WIDTH")
+    plt.savefig ("Sepal_length_vs_Sepal_width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Length (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs PETAL LENGTH")
+    plt.savefig ("Sepal_length_vs_Petal_length.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL LENGTH vs PETAL WIDTH")
+    plt.savefig ("Sepal_length_vs_Petal_Width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Length (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL WIDTH vs PETAL LENGTH")
+    plt.savefig ("Sepal_Width_vs_Petal_length.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Sepal Width (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("SEPAL WIDTH vs PETAL WIDTH")
+    plt.savefig ("Sepal_width_vs_Petal_width.png")
+    plt.show()
+    sns.scatterplot (data = data, x = "Petal Length (cm)", y = "Petal Width (cm)", hue = "Iris Species", palette = colors).set_title ("PETAL LENGTH vs PETAL WIDTH")
+    plt.savefig ("Petal_Length_vs_Petal_width.png")
+    plt.show()
+```
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png)
@@ -273,4 +335,23 @@ Heat map
 
 ### PAIRPLOT
 
+*CODE:*
+```python
+def pairplot():
+    sns.pairplot (data, hue = "Iris Species", diag_kind = "hist", palette = colors)
+    plt.savefig ("pairplot.png")
+    plt.show()
+```
+
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png)
+
+
+## **REFERENCES**
+https://en.wikipedia.org/wiki/Iris_flower_data_set
+https://archive.ics.uci.edu/ml/datasets/iris
+http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+https://www.mygreatlearning.com/blog/open-source-python-libraries/
+https://cs231n.github.io/python-numpy-tutorial/#numpy
+https://en.wikipedia.org/wiki/Pandas_(software)
+https://matplotlib.org/
+https://matplotlib.org/stable/tutorials/introductory/pyplot.html
