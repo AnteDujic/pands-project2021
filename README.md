@@ -26,7 +26,7 @@ The dataset is often used in data mining, classification and clustering examples
 
 ## **DATASET ANALYSIS**
 
-Many others have done the analysis of the Iris Dataset before and it has been aproached in many different ways. Further in this Readme file will be explained how Python can be used to achive the same.
+Many others have anylised the Iris Dataset before and it has been aproached in many different ways. Further in this Readme file will be explained how Python can be used to achive the same.
 
 ### **LIBRARIES**
 
@@ -207,13 +207,14 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 
 ## **DATASET VISUALISATION**
 
-Python, with its libarires, is a powerful tool for a data visualisation. There are multiple ways and aproaches for this but the following ones were deemed the best for the given data:
+Python, with its libraries, is a powerful tool for a data visualisation. There are multiple ways and aproaches for this but the following ones were deemed the best for the given data:
 - bar and pie plot
+- boxplot
 - correlation heat map
 - histograms
 - scatter plots 
 
-Each visual represantation (plot) has been defined as a function using *def* keyword. Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette that represents the Iris flower, etc.) Where there are multiple options available in Python for visual (plot) customization minimum number was used to keep the code short and tidy.
+Each visual represantation (plot) has been defined as a function using *def* keyword. Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette, etc.) Where there are multiple options available in Python for visual plot customization, minimum number was used to keep the code short and tidy. All plots are saved as .png images using *plt.savefig()* method. Plots are also displayed using *plt.show()* to give a preview of how the saved images will look like. 
 
 ### BAR PLOT & PIE PLOT
 
@@ -232,12 +233,14 @@ def speciesPlot():
     plt.show()
 ```
 
+Both bar and pie plot are defined under the same function - *speciesPlot()*. First, the data grouped under Iris Species column is defined as a data for the mentioned plots. *color* is also defined for both plots. *plt.tight_layout()* was used for the bar plot to fit to the image cleanly (didn't fit by default). As for the pie plot, *autopct="%.1f%%"* was used to display percentages and *set_ylabel("")* to remove the y axis name, which was deemed unnecesary. 
+
 <p float="left">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="400" />
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="400" /> 
 </p>
 
-Both the bar and the pie plot confirm what we've seen in the data before, and it is that the 3 species of the Iris Flower are Setosa, Versicolor and Virginica and there is an equal number of each, 50. Each species represent 33,33% of the total number of flowers.
+Both the bar and the pie plot confirm what we've seen in the introduction and the data outputted to the *summary.txt* file. That is, the 3 species of the Iris Flower are Setosa, Versicolor and Virginica and there is an equal number of each - 50. We can also see that each species represents 33,33% of the total number of flowers.
 
 ### BOXPLOT
 
@@ -256,6 +259,8 @@ def boxPlot():
     plt.savefig ("boxPlots.png")
     plt.show()
 ```
+
+Box plots were displayed as one figure using *subplots()*. The grid was defined to have 1 row and 4 columns, and the *figsize()*, that represents the size of the displayed/saved image, is set up to be 12 inches wide and 7 inches high. The main title is set and also the *size* of the title font. Each boxplot is given its data (full dataset), x and y axis, color and also the position in the grid using *ax = axs[]*. Same as the bar plot, this plot was also fitted better using *plt.tight_layout()*.
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
 
