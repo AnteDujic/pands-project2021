@@ -44,8 +44,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* statement, at the start of the program. Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
+
+</details>
 
 ### **DATASET IMPORT**
 
@@ -56,8 +61,13 @@ Program starts by importing the dataset *irisData.csv*. It is stored in this rep
 data = pd.read_csv('irisData.csv')
 data.columns = ["Sepal Length (cm)", "Sepal Width (cm)", "Petal Length (cm)", "Petal Width (cm)", "Iris Species"]
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 Dataset gets imported using *read_csv* from *pandas*. Because the *irisData.csv* file is located in the same directory as the program *analysis.py*, it is not necessary to define the .csv file path and only name is used to read the file. Also, different names were assigned to the columns. This is done for the visual purposes only (.txt file and plots) and those names will be used further in the code.
+
+</details>
 
 ### **DATASET SUMMARY**
 
@@ -76,15 +86,35 @@ with open ("summary.txt", "wt") as f:
     f.write ("Data Summary by species:\n" + str (data.groupby ("Iris Species").describe().transpose()) + "\n\n")
     f.write ("Data correlation:\n" + str (data.corr()))
 ```
+<details>
+<summary>Code comments</summary>
+<br>
+
 To create a file and work with it *open()* function is used. The best practice is to use the *with open()* format, as this closes the file automatically at the end. It is also specified that this file is opened for writing (*w* - also creates the file if it doesn't exist) and it is to be opened in text mode (*t*). *f* is assigned to this file and it is used further in the code. File name created and the one to be written to is defined as *summary.txt*. To write to this file *write()* method is used. The methods to get specific data from the dataset and its analysis is listed below. To get a better visualisation and make the .txt file easily readable, certain options are used in combinaton with those methods.
 
+</details>
+
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *shape()* returns the shape of an array (dataset) - *shape[0]* gives the number of rows, and *shape[1]* the number of columns
+
+</details>
+
 ```
 This data set consists of 150 samples, grouped by 5 different variables.
 
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *columns()* gives the names of the columns. *join()* takes all items and joins them into one string and is used here to list column names in a tidy fashion.
+
+</details>
+
 ```
 Dataset variables are:
 Sepal Length (cm)
@@ -94,7 +124,14 @@ Petal Width (cm)
 Iris Species
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *describe()* gives the summary of the numeric and object values in the given dataset. For the object values it is the count number (*count*), the number of unique values (*unique*), values frequency (*freq*) and the most common value (*top*). *describe(include = ["object"])* includes object data only (strings or timestamps) - "Iris Species" column. *loc* is used to access a group of columns (or rows). Only *count*, *unique* and *top* values are specified for the output as the *top* return different values every time program is run, due to the same number of all 3 values (species).
+
+</details>
+
 ```
        Iris Species
 count           150
@@ -102,7 +139,14 @@ unique            3
 freq             50
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *groupby* is used to specify the group of values, Iris Species in this case. *size()* is used to count the elements of the given data. *to_string()* is used to remove "dtype: int64" from the output, as this information is considered irrelevant for a common user, who this analysis is designed for.
+
+</details>
+
 ```
 Iris Species
 setosa        50
@@ -110,7 +154,14 @@ versicolor    50
 virginica     50
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *head()* returns the specified number of rows - 10 in this case.
+
+</details>
+
 ```
 Iris Dataset - first 10 rows:
    Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm) Iris Species
@@ -126,7 +177,14 @@ Iris Dataset - first 10 rows:
 9                4.9               3.1                1.5               0.1       setosa
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *sample()* returns the specified length in random fashion - 10 in this case
+
+</details>
+
 ```
 Iris Dataset - random 10 rows:
      Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm) Iris Species
@@ -142,7 +200,14 @@ Iris Dataset - random 10 rows:
 103                6.3               2.9                5.6               1.8    virginica
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *describe()* default output is summary of the numeric data. It shows the count of variables and calculates the mean, standard deviation, minimum and maximum value, and also 1st, 2nd and 3rd percentile.
+
+</details>
+
 ```
 Data Summary:
        Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm)
@@ -156,7 +221,14 @@ min             4.300000          2.000000           1.000000          0.100000
 max             7.900000          4.400000           6.900000          2.500000
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *groupby()* and *describe()* paired together gave the *describe()* output as described above, but grouped by Iris Species. *transpose()* is used to swap rows and columns. This was done for visual purposes only.
+
+</details>
+
 ```
 Data Summary by species:
 Iris Species                setosa  versicolor  virginica
@@ -194,7 +266,14 @@ Petal Width (cm)  count  50.000000   50.000000  50.000000
                   max     0.600000    1.800000   2.500000
 ```
 
+<details>
+<summary>Code comments</summary>
+<br>
+
 - *corr()* is used to find correlation between numeric values - Sepal Length (cm), Sepal Width (cm), Petal Length (cm), Petal Width (cm).
+
+</details>
+
 ```
 Data correlation:
                    Sepal Length (cm)  Sepal Width (cm)  Petal Length (cm)  Petal Width (cm)
@@ -232,8 +311,13 @@ def speciesPlot():
     plt.savefig ("speciesPie.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
-Both bar and pie plot are defined under the same function - *speciesPlot()*. First, the data grouped under Iris Species column is defined as a data for the mentioned plots. *color* is also defined for both plots. *plt.tight_layout()* was used for the bar plot to fit to the image cleanly (didn't fit by default). As for the pie plot, *autopct="%.1f%%"* was used to display percentages and *set_ylabel("")* to remove the y axis name, which was deemed unnecesary. 
+Both bar and pie plot are defined under the same function - *speciesPlot()*. First, the data grouped under Iris Species column is defined as a data for the mentioned plots. *color* is also defined for both plots. *plt.tight_layout()* was used for the bar plot to fit to the image cleanly (didn't fit by default). As for the pie plot, *autopct="%.1f%%"* was used to display percentages and *set_ylabel("")* to remove the y axis name, which was deemed unnecesary.
+
+</details>
 
 <p float="left">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesBar.png" width="400" />
@@ -259,8 +343,13 @@ def boxPlot():
     plt.savefig ("boxPlots.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 Box plots were displayed as one figure using *subplots()*. The grid was defined to have 1 row and 4 columns, and the *figsize()*, that represents the size of the displayed/saved image, is set up to be 12 inches wide and 7 inches high. The main title is set and also the *size* of the title font. Each boxplot is given its data (full dataset), x and y axis, color and also the position in the grid using *ax = axs[]*. Same as the bar plot, this plot was also fitted better using *plt.tight_layout()*.
+
+</details>
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
 
@@ -277,8 +366,13 @@ def correlation():
     plt.savefig ("correlation.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 Correlation data outputted before into the *summary.txt* file was visualised using the heat map. *square = True* sets the cells to be squares (rectangles by default), *annot = True* displays values within cells, and color palette (*cmap*) was defined as *mako*. x axis names are rotated by setting *rotation* within *plt.xticks* and the plot was fitted better with *plt.tight_layout()*.
+
+</details>
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png)
 
@@ -302,8 +396,13 @@ def histograms():
     plt.savefig ("Petal_width.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 Total of 4 histograms are displayed and saved individually. Data is set to be the dataset imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping.
+
+</details>
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
@@ -336,8 +435,14 @@ def scatterlots():
     plt.savefig ("Petal_Length_vs_Petal_width.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 There are total of 12 possibile scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*.
+
+</details>
+
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png)
@@ -357,8 +462,13 @@ def pairplot():
     plt.savefig ("pairplot.png")
     plt.show()
 ```
+<details>
+<summary>Code comments</summary>
+<br>
 
 Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *hue* and *palette* are defined, as they were in the other plots shown before. *diag_kind = "hist"* is used to show histograms on the diagonal. Pairplot contains all posible combinations of both mentioned plots.
+
+</details>
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png)
 
