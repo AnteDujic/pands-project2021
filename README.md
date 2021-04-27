@@ -303,7 +303,7 @@ def histograms():
     plt.show()
 ```
 
-Total of 4 histograms are displayed and saved individually. Data is set to be the data set imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping.
+Total of 4 histograms are displayed and saved individually. Data is set to be the dataset imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping.
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
@@ -337,6 +337,8 @@ def scatterlots():
     plt.show()
 ```
 
+There are total of 12 possibile scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*.
+
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_Width.png)
@@ -346,6 +348,8 @@ def scatterlots():
 
 ### PAIRPLOT
 
+Pairplot is a very useful function in Seaborn. The simplest invocation displays scatterplot for each pairing of the variables and histplot for the marginal plots along the diagonal. It is used here as an overview for histagrams and scatterplots.
+
 *CODE:*
 ```python
 def pairplot():
@@ -353,6 +357,8 @@ def pairplot():
     plt.savefig ("pairplot.png")
     plt.show()
 ```
+
+Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *hue* and *palette* are defined, as they were in the other plots shown before. *diag_kind = "hist"* is used to show histograms on the diagonal. Pairplot contains all posible combinations of both mentioned plots.
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png)
 
