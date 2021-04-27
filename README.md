@@ -266,7 +266,7 @@ Box plots were displayed as one figure using *subplots()*. The grid was defined 
 
 ### CORRELATION HEAT MAP
 
-A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show in a glance which variables are correlated and to what degree.
+A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show which variables are correlated and to what degree.
 
 *CODE:*
 ```python
@@ -277,6 +277,8 @@ def correlation():
     plt.savefig ("correlation.png")
     plt.show()
 ```
+
+Correlation data outputted before into the *summary.txt* file was visualised using the heat map. *square = True* sets the cells to be squares (rectangles by default), *annot = True* displays values within cells, and color palette (*cmap*) was defined as *mako*. x axis names are rotated by setting *rotation* within *plt.xticks* and the plot was fitted better with *plt.tight_layout()*.
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png)
 
@@ -300,6 +302,8 @@ def histograms():
     plt.savefig ("Petal_width.png")
     plt.show()
 ```
+
+Total of 4 histograms are displayed and saved individually. Data is set to be the data set imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping.
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
