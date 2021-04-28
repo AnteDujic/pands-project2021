@@ -19,6 +19,8 @@ Based on the combination of these four features, we can distinguish 3 species of
 2. Iris Versicolour
 3. Iris Virginica
 
+Setosa is linerally separable from the other two classes.
+
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Iris%20Flowers.png)
 
 The dataset is often used in data mining, classification and clustering examples and to test algorithms.
@@ -54,7 +56,7 @@ To allow the usage of the mentioned libaries they first need to be imported. Tha
 
 ### **DATASET IMPORT**
 
-Program starts by importing the dataset *irisData.csv*. It is stored in this repository.
+Program starts by importing the dataset *irisData.csv*. It is saved into this repository.
 
 *CODE:*
 ```python
@@ -71,7 +73,7 @@ Dataset gets imported using *read_csv* from *pandas*. Because the *irisData.csv*
 
 ### **DATASET SUMMARY**
 
-Summary of the dataset contains the basic information on the given dataset and the analysis of the data contained within. It is outputted to the *summary.txt* file. This file is also stored in this repository.
+Summary of the dataset contains the basic information on the given dataset and the analysis of the data contained within. It is outputted to the *summary.txt* file. This file is also saved into this repository.
 
 *CODE:*
 ```python
@@ -286,7 +288,7 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 
 ## **DATASET VISUALISATION**
 
-Python, with its libraries, is a powerful tool for a data visualisation. There are multiple ways and aproaches for this but the following ones were deemed the best for the given data:
+Python, with its libraries, is a powerful tool for a data visualisation. There are multiple ways and aproaches but the following ones were deemed the best for the given data:
 - bar and pie plot
 - boxplot
 - correlation heat map
@@ -297,7 +299,7 @@ Each visual represantation (plot) has been defined as a function using *def* key
 
 ### BAR PLOT & PIE PLOT
 
-A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice, is proportional to the quantity it represents.
+A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.
 
 *CODE:*
 ```python
@@ -324,7 +326,7 @@ Both bar and pie plot are defined under the same function - *speciesPlot()*. Fir
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/speciesPie.png" width="400" /> 
 </p>
 
-Both the bar and the pie plot confirm what we've seen in the introduction and the data outputted to the *summary.txt* file. That is, the 3 species of the Iris Flower are Setosa, Versicolor and Virginica and there is an equal number of each - 50. We can also see that each species represents 33,33% of the total number of flowers.
+Both the bar and the pie plot are a visual representation of the object data in Iris Species column, which was already written to the *summary.txt* file. It shows there are 3 species of the Iris Flower: Setosa, Versicolor and Virginica and there is an equal number of each - 50. We can also see that each species represents 33,33% of the total number of flowers.
 
 ### BOXPLOT
 
@@ -353,9 +355,11 @@ Box plots were displayed as one figure using *subplots()*. The grid was defined 
 
 ![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
 
+It is clearly visible that Setosa has the smallest Sepal length, Petal length and Petal width. However, it has the largest Sepal width. Other highest values belong to Virginica. It has the largest Sepal length, Petal length and Petal Width. Versicolor has the smallest Sepal width.
+
 ### CORRELATION HEAT MAP
 
-A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show which variables are correlated and to what degree.
+A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show which variables are correlated and to what degree. Correlation ranges from -1 to 1, where correlation closer to 1 indicates there is a strong relationship between values, and closer to -1 indicates there is a higher chance one value will decrease if the other one increases.
 
 *CODE:*
 ```python
@@ -374,7 +378,11 @@ Correlation data outputted before into the *summary.txt* file was visualised usi
 
 </details>
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png)
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png" />
+</p>
+
+We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght.
 
 ### HISTOGRAMS
 
