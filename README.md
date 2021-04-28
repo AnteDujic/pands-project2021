@@ -353,7 +353,9 @@ Box plots were displayed as one figure using *subplots()*. The grid was defined 
 
 </details>
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png)
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/boxPlots.png" />
+</p>
 
 It is clearly visible that Setosa has the smallest Sepal length, Petal length and Petal width. However, it has the largest Sepal width. Other highest values belong to Virginica. It has the largest Sepal length, Petal length and Petal Width. Versicolor has the smallest Sepal width.
 
@@ -412,10 +414,21 @@ Total of 4 histograms are displayed and saved individually. Data is set to be th
 
 </details>
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_length.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png)
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_length.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png" />
+</p>
 
 ### SCATTERPLOTS
 
@@ -451,13 +464,29 @@ There are total of 12 possibile scatterplots to be displayed from the given data
 
 </details>
 
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png" />
+</p>
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_Width.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_Width_vs_Petal_length.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width_vs_Petal_width.png)
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png)
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_Width.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_Width_vs_Petal_length.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width_vs_Petal_width.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png" />
+</p>
 
 ### PAIRPLOT
 
@@ -478,7 +507,9 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 
 </details>
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png)
+<p align="center">
+  <img src="https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png" />
+</p>
 
 
 ## **REFERENCES**
