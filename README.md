@@ -384,7 +384,7 @@ Correlation data outputted before into the *summary.txt* file was visualised usi
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png" />
 </p>
 
-We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght.
+We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght. It is also visible that Sepal data varies more the the Petal data.
 
 ### HISTOGRAMS
 
@@ -418,17 +418,26 @@ Total of 4 histograms are displayed and saved individually. Data is set to be th
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png" />
 </p>
 
+Sepal length values don't fluctuate as much as the othet values, which will be visible in the images below. We can see that mainly Setosa has the shortest Sepal, while Viginica has the longest. Virginica Sepal values varies the most.
+
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png" />
 </p>
+
+Sepal width values fluctuate more then Sepal length. It is visible there is the most flowers with the Sepal width approx. 3cm, of which most fit under Virginica. As the Sepal width decreases or increases from 3cm the number of flowers decreses. Setosa has the widest Sepal, which confirms the statement from before.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_length.png" />
 </p>
 
+It is clearly visible there are the most flowers with the lowest value range, and those are Setosa. Virginica has the longest petal, but the number of the flowers in the highest range is the smallest of all.
+
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png" />
 </p>
+
+Petal width histogram is very similar to the Petal lenght one, which confirms the high correlation between the two values. Setosa, again, stands out as the flower with the smallest width. The number of flowers in the lowest range is the highest.
+
 
 ### SCATTERPLOTS
 
