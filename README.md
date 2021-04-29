@@ -522,32 +522,32 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 
 
 ## **REFERENCES**
-[1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
-[2]   https://archive.ics.uci.edu/ml/datasets/iris
-[3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
-[4]   http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
-[5]   https://www.mygreatlearning.com/blog/open-source-python-libraries/
-[6]   https://cs231n.github.io/python-numpy-tutorial/#numpy
-[7]   https://en.wikipedia.org/wiki/Pandas_(software)
-[8]   https://matplotlib.org/
-[9]   https://matplotlib.org/stable/tutorials/introductory/pyplot.html
-[10]  https://seaborn.pydata.org/
-[11]  https://realpython.com/python-import/
-[12]  https://realpython.com/python-csv/
-[13]  https://www.programiz.com/python-programming/file-operation
-[14]  https://stackoverflow.com/questions/10200268/what-does-shape-do-in-for-i-in-rangey-shape0/21200291
-[15]  https://www.geeksforgeeks.org/python-pandas-dataframe-columns/
-[16]  https://www.w3schools.com/python/ref_string_join.asp
-[17]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
-[18]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
-[19]  https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
-[20]  https://note.nkmk.me/en/python-numpy-ndarray-ndim-shape-size/
-[21]  https://stackoverflow.com/questions/29645153/remove-name-dtype-from-pandas-output-of-dataframe-or-series?noredirect=1
-[22]  https://www.w3resource.com/pandas/dataframe/dataframe-head.php
-[23]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
-[24]  https://www.w3resource.com/numpy/manipulation/transpose.php
-[25]  https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-[26]  
+- [1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
+- [2]   https://archive.ics.uci.edu/ml/datasets/iris
+- [3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
+- [4]   http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+- [5]   https://www.mygreatlearning.com/blog/open-source-python-libraries/
+- [6]   https://cs231n.github.io/python-numpy-tutorial/#numpy
+- [7]   https://en.wikipedia.org/wiki/Pandas_(software)
+- [8]   https://matplotlib.org/
+- [9]   https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+- [10]  https://seaborn.pydata.org/
+- [11]  https://realpython.com/python-import/
+- [12]  https://realpython.com/python-csv/
+- [13]  https://www.programiz.com/python-programming/file-operation
+- [14]  https://stackoverflow.com/questions/10200268/what-does-shape-do-in-for-i-in-rangey-shape0/21200291
+- [15]  https://www.geeksforgeeks.org/python-pandas-dataframe-columns/
+- [16]  https://www.w3schools.com/python/ref_string_join.asp
+- [17]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+- [18]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
+- [19]  https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+- [20]  https://note.nkmk.me/en/python-numpy-ndarray-ndim-shape-size/
+- [21]  https://stackoverflow.com/questions/29645153/remove-name-dtype-from-pandas-output-of-dataframe-or-series?noredirect=1
+- [22]  https://www.w3resource.com/pandas/dataframe/dataframe-head.php
+- [23]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
+- [24]  https://www.w3resource.com/numpy/manipulation/transpose.php
+- [25]  https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+- [26]  
 
 
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
