@@ -1,6 +1,6 @@
 # PROGRAMING AND SCRIPTING
-# PROJECT
-## AUTHOR: ANTE DUJIC
+### PROJECT
+### AUTHOR: ANTE DUJIC
 
 This repository contains the code written as a project for Programing and Scripting Module. The aim of the project is to show how Pyton can be used to analyse the Iris flower data set.
 
@@ -286,7 +286,7 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 
 ```
 
-## **DATASET VISUALISATION**
+### **DATASET VISUALISATION**
 
 Python, with its libraries, is a powerful tool for a data visualisation. There are multiple ways and aproaches but the following ones were deemed the best for the given data:
 - bar and pie plot
@@ -295,11 +295,23 @@ Python, with its libraries, is a powerful tool for a data visualisation. There a
 - histograms
 - scatter plots 
 
-Each visual represantation (plot) has been defined as a function using *def* keyword. Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette, etc.) Where there are multiple options available in Python for visual plot customization, minimum number was used to keep the code short and tidy. All plots are saved as .png images using *plt.savefig()* method. Plots are also displayed using *plt.show()* to give a preview of how the saved images will look like. 
+Each visual represantation (plot) has been defined as a function using *def* keyword. [26] Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette, etc.) Where there are multiple options available in Python for visual plot customization, minimum number was used to keep the code short and tidy. All plots are saved as .png images using *plt.savefig()* method. [27] Plots are also displayed using *plt.show()* to give a preview of how the saved images will look like. [28]
 
-### BAR PLOT & PIE PLOT
+*CODE:*
+```python
+colors = ["#FFB200", "#9FA91F", "#702963"]
+```
+<details>
+<summary>Code comments</summary>
+<br>
 
-A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.
+*color* variable is defined to minimize the code, and to assign the same colors for the same species in each plot. Color codes (hex triplet) were used to give specific color values. [29]
+
+</details>
+
+#### BAR PLOT & PIE PLOT
+
+A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle. [30] A pie plot is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. [31]
 
 *CODE:*
 ```python
@@ -317,7 +329,7 @@ def speciesPlot():
 <summary>Code comments</summary>
 <br>
 
-Both bar and pie plot are defined under the same function - *speciesPlot()*. First, the data grouped under Iris Species column is defined as a data for the mentioned plots. *color* is also defined for both plots. *plt.tight_layout()* was used for the bar plot to fit to the image cleanly (didn't fit by default). As for the pie plot, *autopct="%.1f%%"* was used to display percentages and *set_ylabel("")* to remove the y axis name, which was deemed unnecesary.
+Both bar [32] and pie plot [33] are defined under the same function - *speciesPlot()*. First, the data grouped under Iris Species column is defined as a data for the mentioned plots. *color* is also defined for both plots. *plt.tight_layout()* was used for the bar plot to fit to the image cleanly (didn't fit by default). [34] As for the pie plot, *autopct="%.1f%%"* [35] was used to display percentages and *set_ylabel("")* to remove the y axis name, which was deemed unnecesary. [36]
 
 </details>
 
@@ -328,9 +340,9 @@ Both bar and pie plot are defined under the same function - *speciesPlot()*. Fir
 
 Both the bar and the pie plot are a visual representation of the object data in Iris Species column, which was already written to the *summary.txt* file. It shows there are 3 species of the Iris Flower: Setosa, Versicolor and Virginica and there is an equal number of each - 50. We can also see that each species represents 33,33% of the total number of flowers.
 
-### BOXPLOT
+#### BOXPLOT
 
-Box plots are useful as they provide a visual summary of the data enabling researchers to quickly identify mean values, the dispersion of the data set, and signs of skewness. Data shown in the box plot are the minimum score, first (lower) quartile, median, third (upper) quartile, and maximum score.
+Box plots are useful as they provide a visual summary of the data enabling researchers to quickly identify mean values, the dispersion of the data set, and signs of skewness. Data shown in the box plot are the minimum score, first (lower) quartile, median, third (upper) quartile, and maximum score. [37]
 
 *CODE:*
 ```python
@@ -349,7 +361,7 @@ def boxPlot():
 <summary>Code comments</summary>
 <br>
 
-Box plots were displayed as one figure using *subplots()*. The grid was defined to have 1 row and 4 columns, and the *figsize()*, that represents the size of the displayed/saved image, is set up to be 12 inches wide and 7 inches high. The main title is set and also the *size* of the title font. Each boxplot is given its data (full dataset), x and y axis, color and also the position in the grid using *ax = axs[]*. Same as the bar plot, this plot was also fitted better using *plt.tight_layout()*.
+Box plots [38] were displayed as one figure using *subplots()*. The grid was defined to have 1 row and 4 columns, and the *figsize()*, that represents the size of the displayed/saved image, is set up to be 12 inches wide and 7 inches high. The main title is set and also the *size* of the title font. Each boxplot is given its data (full dataset), x and y axis, color and also the position in the grid using *ax = axs[]*. [39] Same as the bar plot, this plot was also fitted better using *plt.tight_layout()*. [34]
 
 </details>
 
@@ -359,9 +371,9 @@ Box plots were displayed as one figure using *subplots()*. The grid was defined 
 
 It is clearly visible that Setosa has the smallest Sepal length, Petal length and Petal width. However, it has the largest Sepal width. Other highest values belong to Virginica. It has the largest Sepal length, Petal length and Petal Width. Versicolor has the smallest Sepal width.
 
-### CORRELATION HEAT MAP
+#### CORRELATION HEAT MAP
 
-A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. They show which variables are correlated and to what degree. Correlation ranges from -1 to 1, where correlation closer to 1 indicates there is a strong relationship between values, and closer to -1 indicates there is a higher chance one value will decrease if the other one increases.
+A correlation heatmap uses colored cells to show a 2D correlation matrix (table) between two discrete dimensions or event types. [40] They show which variables are correlated and to what degree. Correlation ranges from -1 to 1, where correlation closer to 1 indicates there is a strong relationship between values, and closer to -1 indicates there is a higher chance one value will decrease if the other one increases.
 
 *CODE:*
 ```python
@@ -376,7 +388,7 @@ def correlation():
 <summary>Code comments</summary>
 <br>
 
-Correlation data outputted before into the *summary.txt* file was visualised using the heat map. *square = True* sets the cells to be squares (rectangles by default), *annot = True* displays values within cells, and color palette (*cmap*) was defined as *mako*. x axis names are rotated by setting *rotation* within *plt.xticks* and the plot was fitted better with *plt.tight_layout()*.
+Correlation data outputted before into the *summary.txt* file was visualised using the heat map. *square = True* sets the cells to be squares (rectangles by default), *annot = True* displays values within cells, and color palette (*cmap*) was defined as *mako*. [41] x axis names are rotated by setting *rotation* within *plt.xticks* [42] and the plot was fitted better with *plt.tight_layout()*. [34]
 
 </details>
 
@@ -386,9 +398,9 @@ Correlation data outputted before into the *summary.txt* file was visualised usi
 
 We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght. It is also visible that Sepal data varies more the the Petal data.
 
-### HISTOGRAMS
+#### HISTOGRAMS
 
-A histogram is an approximate representation of the distribution of numerical data.  It is similar to a Bar Plot, but a histogram groups numbers into ranges. The height of each bar shows how many fall into each range.
+A histogram is an approximate representation of the distribution of numerical data. [43] It is similar to a Bar Plot, but a histogram groups numbers into ranges. The height of each bar shows how many fall into each range. [44]
 
 *CODE:*
 ```python
@@ -410,7 +422,7 @@ def histograms():
 <summary>Code comments</summary>
 <br>
 
-Total of 4 histograms are displayed and saved individually. Data is set to be the dataset imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping.
+Total of 4 histograms are displayed and saved individually. Data is set to be the dataset imported at the start of the program. *x* axis is set up for each plot, as is the color *palette*. *hue* was used to separate the bars by *Iris Species* and *multiple = "stack"* for different species bar with the same value range to be stacked on top of eachother, instead of overlapping. [45]
 
 </details>
 
@@ -439,9 +451,9 @@ It is clearly visible there are the most flowers with the lowest value range, an
 Petal width histogram is very similar to the Petal lenght one, which confirms the high correlation between the two values. Setosa, again, stands out as the flower with the smallest width. The number of flowers in the lowest range is the highest.
 
 
-### SCATTERPLOTS
+#### SCATTERPLOTS
 
-A scatterplot is a type of data display that shows the relationship between two numerical variables. Each member of the dataset gets plotted as a point whose (x, y) coordinates relates to its values for the two variables. Scatter plots show how much one variable is affected by another.
+A scatterplot is a type of data display that shows the relationship between two numerical variables. Each member of the dataset gets plotted as a point whose (x, y) coordinates relates to its values for the two variables. Scatter plots show how much one variable is affected by another. [46]
 
 *CODE:*
 ```python
@@ -469,7 +481,7 @@ def scatterlots():
 <summary>Code comments</summary>
 <br>
 
-There are total of 12 possibile scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*.
+There are total of 12 possible scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*. [47]
 
 </details>
 
@@ -497,9 +509,9 @@ There are total of 12 possibile scatterplots to be displayed from the given data
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png" />
 </p>
 
-### PAIRPLOT
+#### PAIRPLOT
 
-Pairplot is a very useful function in Seaborn. The simplest invocation displays scatterplot for each pairing of the variables and histplot for the marginal plots along the diagonal. It is used here as an overview for histagrams and scatterplots.
+Pairplot is a very useful function in Seaborn. The simplest invocation displays scatterplot for each pairing of the variables and histplot for the marginal plots along the diagonal. It is used here as an overview for histagrams and scatterplots. [48]
 
 *CODE:*
 ```python
@@ -512,7 +524,7 @@ def pairplot():
 <summary>Code comments</summary>
 <br>
 
-Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *hue* and *palette* are defined, as they were in the other plots shown before. *diag_kind = "hist"* is used to show histograms on the diagonal. Pairplot contains all posible combinations of both mentioned plots.
+Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *hue* and *palette* are defined, as they were in the other plots shown before. *diag_kind = "hist"* is used to show histograms on the diagonal. Pairplot contains all posible combinations of both mentioned plots. [48]
 
 </details>
 
@@ -522,6 +534,7 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 
 
 ## **REFERENCES**
+
 - [1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
 - [2]   https://archive.ics.uci.edu/ml/datasets/iris
 - [3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
@@ -547,13 +560,27 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 - [23]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
 - [24]  https://www.w3resource.com/numpy/manipulation/transpose.php
 - [25]  https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-- [26]  
+- [26]  https://www.w3schools.com/python/python_functions.asp
+- [27]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+- [28]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html
+- [29]  https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F
+- [30]  https://seaborn.pydata.org/generated/seaborn.barplot.html
+- [31]  https://en.wikipedia.org/wiki/Pie_chart
+- [32]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
+- [33]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html
+- [34]  https://matplotlib.org/stable/tutorials/intermediate/tight_layout_guide.html
+- [35]  http://www.learningaboutelectronics.com/Articles/How-to-create-a-pie-chart-in-matplotlib-with-Python.php
+- [36]  https://stackoverflow.com/questions/34094596/python-matplotlib-pyplot-pie-charts-how-to-remove-the-label-on-the-left-side
+- [37]  https://www.simplypsychology.org/boxplots.html
+- [38]  https://seaborn.pydata.org/generated/seaborn.boxplot.html
+- [39]  https://stackoverflow.com/questions/31726643/how-do-i-get-multiple-subplots-in-matplotlib
+- [40]  https://docs.cloudera.com/data-visualization/cloud/howto-visuals/topics/viz-visual-corr-heatmap.html
+- [41]  https://seaborn.pydata.org/generated/seaborn.heatmap.html
+- [42]  https://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotlib
+- [43]  https://en.wikipedia.org/wiki/Histogram
+- [44]  https://www.mathsisfun.com/data/histograms.html
+- [45]  https://seaborn.pydata.org/generated/seaborn.histplot.html
+- [46]  https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/a/scatterplots-and-correlation-review
+- [47]  https://seaborn.pydata.org/generated/seaborn.scatterplot.html
+- [48]  https://seaborn.pydata.org/generated/seaborn.pairplot.html
 
-
-http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
-https://www.mygreatlearning.com/blog/open-source-python-libraries/
-
-https://cs231n.github.io/python-numpy-tutorial/#numpy
-https://en.wikipedia.org/wiki/Pandas_(software)
-https://matplotlib.org/
-https://matplotlib.org/stable/tutorials/introductory/pyplot.html
