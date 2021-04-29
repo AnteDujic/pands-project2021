@@ -1,5 +1,4 @@
-# PROGRAMING AND SCRIPTING
-### PROJECT
+# PROGRAMING AND SCRIPTING | PROJECT | APRIL 2021
 ### AUTHOR: ANTE DUJIC
 
 This repository contains the code written as a project for Programing and Scripting Module. The aim of the project is to show how Pyton can be used to analyse the Iris flower data set.
@@ -19,7 +18,7 @@ Based on the combination of these four features, we can distinguish 3 species of
 2. Iris Versicolour
 3. Iris Virginica
 
-One class, Setosa, is linearly separable from the other 2. The latter are not linearly separable from each other.[2] Linearly separable data is data that if graphed in two dimensions, can be separated by a straight line. [3]
+One class, Setosa, is linearly separable from the other two. The latter are not linearly separable from each other.[2] Linearly separable data is data that if graphed in two dimensions, can be separated by a straight line. [3]
 
 ![](https://github.com/AnteDujic/pands-project2021/blob/main/Iris%20Flowers.png)
 
@@ -56,7 +55,7 @@ To allow the usage of the mentioned libaries they first need to be imported. Tha
 
 ### **DATASET IMPORT**
 
-Program starts by importing the dataset *irisData.csv*. It is saved into this repository.
+Program starts by importing the dataset *irisData.csv*. [49] It is saved into this repository.
 
 *CODE:*
 ```python
@@ -533,8 +532,11 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 </p>
 
 
+## CONCLUSION
+
 ## **REFERENCES**
 
+### **MAIN**
 - [1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
 - [2]   https://archive.ics.uci.edu/ml/datasets/iris
 - [3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
@@ -583,4 +585,17 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 - [46]  https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/a/scatterplots-and-correlation-review
 - [47]  https://seaborn.pydata.org/generated/seaborn.scatterplot.html
 - [48]  https://seaborn.pydata.org/generated/seaborn.pairplot.html
+- [49]  https://gist.github.com/curran/a08a1080b88344b0c8a7
+
+
+### *OTHER ANALYSIS**
+
+1. http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+2. https://www.maplesoft.com/support/help/maple/view.aspx?path=examples/IrisData
+3. https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+4. https://towardsdatascience.com/eda-of-the-iris-dataset-190f6dfd946d
+5. http://rstudio-pubs-static.s3.amazonaws.com/450733_9a472ce9632f4ffbb2d6175aaaee5be6.html
+6. https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40
+7. http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
+
 
