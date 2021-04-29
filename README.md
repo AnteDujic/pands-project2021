@@ -2,11 +2,11 @@
 # PROJECT
 ## AUTHOR: ANTE DUJIC
 
-This repository contains the code written as a project for Programing and Scripting Module. The project is to show how Pyton can be used to analyse the Iris flower data set.
+This repository contains the code written as a project for Programing and Scripting Module. The aim of the project is to show how Pyton can be used to analyse the Iris flower data set.
 
 ## **INTRODUCTION**
 
-The Iris flower data set, aslo called Fisher's Iris data set, is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in 1936. The dataset consists of 150 instances, made up of 50 samples each of 3 species of iris.
+The Iris flower data set, aslo called Fisher's Iris data set, is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in 1936. The dataset consists of 150 instances, made up of 50 samples each of 3 species of iris.[1]
 
 There were 4 features measured from each sample:
 1. Sepal length in cm's
@@ -19,25 +19,25 @@ Based on the combination of these four features, we can distinguish 3 species of
 2. Iris Versicolour
 3. Iris Virginica
 
-Setosa is linerally separable from the other two classes.
+One class, Setosa, is linearly separable from the other 2. The latter are not linearly separable from each other.[2] Linearly separable data is data that if graphed in two dimensions, can be separated by a straight line. [3]
 
-![alt text](https://github.com/AnteDujic/pands-project2021/blob/main/Iris%20Flowers.png)
+![](https://github.com/AnteDujic/pands-project2021/blob/main/Iris%20Flowers.png)
 
-The dataset is often used in data mining, classification and clustering examples and to test algorithms.
+The dataset is often used in data mining, classification and clustering examples and to test algorithms.[4]
 
 
 ## **DATASET ANALYSIS**
 
-Many others have anylised the Iris Dataset before and it has been aproached in many different ways. Further in this Readme file will be explained how Python can be used to achive the same.
+Iris Dataset has been analysed many times before, using various tools and approaches. Further down in this Readme file will be explained how Python can be used to achive the same. Dataset Analysis part consists of the codes used to analyse the data, explanation (comments) of the codes, their output and a brief explanation of the output - which should confirm what we've already learned about the Iris Flowers. It is important to say that the explanation of the code will be very detailed. Where it is not a practice to comment the "simple" code, the aim here is to show the understanding of the code used.
 
 ### **LIBRARIES**
 
-Python Libraries are a set of useful functions that eliminate the need for writing codes from scratch. There are over 137,000 python libraries present today. Libraries used for this analysis are listed below.
+Python Libraries are a set of useful functions that eliminate the need for writing codes from scratch. There are over 137,000 python libraries present today. [5] Libraries used for this analysis are listed below.
 
-- **NumPy** - the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and tools for working with these arrays.
-- **Pandas** -  a library for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-- **Matplotlib.pyplot** - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.
-- **Seaborn** - a data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+- **NumPy** - the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and tools for working with these arrays. [6]
+- **Pandas** -  a library for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.[7]
+- **Matplotlib.pyplot** - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. [8] matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc. [9]
+- **Seaborn** - a data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. [10]
 
 *CODE:*
 ```python
@@ -50,7 +50,7 @@ import seaborn as sns
 <summary>Code comments</summary>
 <br>
 
-To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* statement, at the start of the program. Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
+To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* [11] statement, at the start of the program. Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
 
 </details>
 
@@ -67,7 +67,7 @@ data.columns = ["Sepal Length (cm)", "Sepal Width (cm)", "Petal Length (cm)", "P
 <summary>Code comments</summary>
 <br>
 
-Dataset gets imported using *read_csv* from *pandas*. Because the *irisData.csv* file is located in the same directory as the program *analysis.py*, it is not necessary to define the .csv file path and only name is used to read the file. Also, different names were assigned to the columns. This is done for the visual purposes only (.txt file and plots) and those names will be used further in the code.
+Dataset gets imported using *read_csv* from *pandas* [12]. Because the *irisData.csv* file is located in the same directory as the program *analysis.py*, it is not necessary to define the .csv file path and only name is used to read the file. Also, different names were assigned to the columns. This is done for the visual purposes only (.txt file and plots) and those names will be used further in the code.
 
 </details>
 
@@ -92,7 +92,7 @@ with open ("summary.txt", "wt") as f:
 <summary>Code comments</summary>
 <br>
 
-To create a file and work with it *open()* function is used. The best practice is to use the *with open()* format, as this closes the file automatically at the end. It is also specified that this file is opened for writing (*w* - also creates the file if it doesn't exist) and it is to be opened in text mode (*t*). *f* is assigned to this file and it is used further in the code. File name created and the one to be written to is defined as *summary.txt*. To write to this file *write()* method is used. The methods to get specific data from the dataset and its analysis is listed below. To get a better visualisation and make the .txt file easily readable, certain options are used in combinaton with those methods.
+To create a file and work with it *open()* function is used. The best practice is to use the *with open()* format, as this closes the file automatically at the end. It is also specified that this file is opened for writing (*w* - also creates the file if it doesn't exist) and it is to be opened in text mode (*t*). *f* is assigned to this file and it is used further in the code. File name created and the one to be written to is defined as *summary.txt*. To write to this file *write()* method is used. [13] The methods to get specific data from the dataset and its analysis is listed below. To get a better visualisation and make the .txt file easily readable, certain options are used in combinaton with those methods.
 
 </details>
 
@@ -100,7 +100,7 @@ To create a file and work with it *open()* function is used. The best practice i
 <summary>Code comments</summary>
 <br>
 
-- *shape()* returns the shape of an array (dataset) - *shape[0]* gives the number of rows, and *shape[1]* the number of columns
+- *shape()* returns the shape of an array (dataset) - *shape[0]* gives the number of rows, and *shape[1]* the number of columns [14]
 
 </details>
 
@@ -113,7 +113,7 @@ This data set consists of 150 samples, grouped by 5 different variables.
 <summary>Code comments</summary>
 <br>
 
-- *columns()* gives the names of the columns. *join()* takes all items and joins them into one string and is used here to list column names in a tidy fashion.
+- *columns()* gives the names of the columns. [15] *join()* takes all items and joins them into one string and is used here to list column names in a tidy fashion. [16]
 
 </details>
 
@@ -130,7 +130,7 @@ Iris Species
 <summary>Code comments</summary>
 <br>
 
-- *describe()* gives the summary of the numeric and object values in the given dataset. For the object values it is the count number (*count*), the number of unique values (*unique*), values frequency (*freq*) and the most common value (*top*). *describe(include = ["object"])* includes object data only (strings or timestamps) - "Iris Species" column. *loc* is used to access a group of columns (or rows). Only *count*, *unique* and *top* values are specified for the output as the *top* return different values every time program is run, due to the same number of all 3 values (species).
+- *describe()* gives the summary of the numeric and object values in the given dataset. For the object values it is the count number (*count*), the number of unique values (*unique*), values frequency (*freq*) and the most common value (*top*). *describe(include = ["object"])* includes object data only (strings or timestamps) - "Iris Species" column. [17] *loc* is used to access a group of columns (or rows). [18] Only *count*, *unique* and *top* values are specified for the output as the *top* return different values every time program is run, due to the same number of all 3 values (species).
 
 </details>
 
@@ -145,7 +145,7 @@ freq             50
 <summary>Code comments</summary>
 <br>
 
-- *groupby* is used to specify the group of values, Iris Species in this case. *size()* is used to count the elements of the given data. *to_string()* is used to remove "dtype: int64" from the output, as this information is considered irrelevant for a common user, who this analysis is designed for.
+- *groupby* is used to specify the group of values, Iris Species in this case. [19] *size()* is used to count the elements of the given data. [20] *to_string()* is used to remove "dtype: int64" from the output, as this information is considered irrelevant for a common user, who this analysis is designed for. [21]
 
 </details>
 
@@ -160,7 +160,7 @@ virginica     50
 <summary>Code comments</summary>
 <br>
 
-- *head()* returns the specified number of rows - 10 in this case.
+- *head()* returns the specified number of rows - 10 in this case. [22]
 
 </details>
 
@@ -183,7 +183,7 @@ Iris Dataset - first 10 rows:
 <summary>Code comments</summary>
 <br>
 
-- *sample()* returns the specified length in random fashion - 10 in this case
+- *sample()* returns the specified length in random fashion - 10 in this case [23]
 
 </details>
 
@@ -206,7 +206,7 @@ Iris Dataset - random 10 rows:
 <summary>Code comments</summary>
 <br>
 
-- *describe()* default output is summary of the numeric data. It shows the count of variables and calculates the mean, standard deviation, minimum and maximum value, and also 1st, 2nd and 3rd percentile.
+- *describe()* default output is summary of the numeric data. It shows the count of variables and calculates the mean, standard deviation, minimum and maximum value, and also 1st, 2nd and 3rd percentile. [17]
 
 </details>
 
@@ -227,7 +227,7 @@ max             7.900000          4.400000           6.900000          2.500000
 <summary>Code comments</summary>
 <br>
 
-- *groupby()* and *describe()* paired together gave the *describe()* output as described above, but grouped by Iris Species. *transpose()* is used to swap rows and columns. This was done for visual purposes only.
+- *groupby()* [19] and *describe()* [17] paired together gave the *describe()* output as described above, but grouped by Iris Species. *transpose()* is used to swap rows and columns. [24] This was done for visual purposes only.
 
 </details>
 
@@ -272,7 +272,7 @@ Petal Width (cm)  count  50.000000   50.000000  50.000000
 <summary>Code comments</summary>
 <br>
 
-- *corr()* is used to find correlation between numeric values - Sepal Length (cm), Sepal Width (cm), Petal Length (cm), Petal Width (cm).
+- *corr()* is used to find correlation between numeric values - Sepal Length (cm), Sepal Width (cm), Petal Length (cm), Petal Width (cm). [25]
 
 </details>
 
@@ -522,10 +522,37 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 
 
 ## **REFERENCES**
-https://en.wikipedia.org/wiki/Iris_flower_data_set
-https://archive.ics.uci.edu/ml/datasets/iris
+[1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
+[2]   https://archive.ics.uci.edu/ml/datasets/iris
+[3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
+[4]   http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+[5]   https://www.mygreatlearning.com/blog/open-source-python-libraries/
+[6]   https://cs231n.github.io/python-numpy-tutorial/#numpy
+[7]   https://en.wikipedia.org/wiki/Pandas_(software)
+[8]   https://matplotlib.org/
+[9]   https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+[10]  https://seaborn.pydata.org/
+[11]  https://realpython.com/python-import/
+[12]  https://realpython.com/python-csv/
+[13]  https://www.programiz.com/python-programming/file-operation
+[14]  https://stackoverflow.com/questions/10200268/what-does-shape-do-in-for-i-in-rangey-shape0/21200291
+[15]  https://www.geeksforgeeks.org/python-pandas-dataframe-columns/
+[16]  https://www.w3schools.com/python/ref_string_join.asp
+[17]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+[18]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
+[19]  https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+[20]  https://note.nkmk.me/en/python-numpy-ndarray-ndim-shape-size/
+[21]  https://stackoverflow.com/questions/29645153/remove-name-dtype-from-pandas-output-of-dataframe-or-series?noredirect=1
+[22]  https://www.w3resource.com/pandas/dataframe/dataframe-head.php
+[23]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
+[24]  https://www.w3resource.com/numpy/manipulation/transpose.php
+[25]  https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+[26]  
+
+
 http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 https://www.mygreatlearning.com/blog/open-source-python-libraries/
+
 https://cs231n.github.io/python-numpy-tutorial/#numpy
 https://en.wikipedia.org/wiki/Pandas_(software)
 https://matplotlib.org/
