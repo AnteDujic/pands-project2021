@@ -547,14 +547,14 @@ This plot serves as an overview of the scatterplot and histograms shown before i
 
 ## **CONCLUSION**
 
-We've seen how Python can be used to analyse the given data. It contains powerful libraries that require simple coding for analysis. It's been shown how (e.g. Machine Learning)
+We've seen in this Readme file how Python can be used to analyse the data. It was first explained what the Iris Flower is and what its main characteristics are. It was then shown how program can be written in Python to analyse the given data in details and confirm what was stated in the Introduction. This analysis gave a better understanding of Python as a tool for data analysis but aslo a very good understanding of the Iris Flower dataset.
 
 ## **REFERENCES**
 
 ### **MAIN**
-- [1]   https://en.wikipedia.org/wiki/Iris_flower_data_set
-- [2]   https://archive.ics.uci.edu/ml/datasets/iris
-- [3]   https://jamesmccaffrey.wordpress.com/2019/04/27/
+- [1]   www.wikipedia.org 2021, *Iris flower data set*, Wikipedia, viewed on 25th Mar 2021,  https://en.wikipedia.org/wiki/Iris_flower_data_set
+- [2]   www.archive.ics 2021, *Iris Data Set*, R.A.Fisher, viewed on 25th Mar 2021, https://archive.ics.uci.edu/ml/datasets/iris
+- [3]   www.jamesmccaffrey.wordpress.com, *The difference between Linearly Seperable Data...*, James D.McC., viewed on 28th Apr 2021, https://jamesmccaffrey.wordpress.com/2019/04/27/
 - [4]   http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 - [5]   https://www.mygreatlearning.com/blog/open-source-python-libraries/
 - [6]   https://cs231n.github.io/python-numpy-tutorial/#numpy
@@ -625,5 +625,3 @@ We've seen how Python can be used to analyse the given data. It contains powerfu
 TO DO:
 incode comments
 reference update
-conclusion
-scatterplot explanation
