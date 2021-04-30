@@ -554,53 +554,53 @@ We've seen in this Readme file how Python can be used to analyse the data. It wa
 ### **MAIN**
 - [1]   www.wikipedia.org 2021, *Iris flower data set*, Wikipedia, viewed on 25th Mar 2021,  https://en.wikipedia.org/wiki/Iris_flower_data_set
 - [2]   www.archive.ics 2021, *Iris Data Set*, R.A.Fisher, viewed on 25th Mar 2021, https://archive.ics.uci.edu/ml/datasets/iris
-- [3]   www.jamesmccaffrey.wordpress.com, *The difference between Linearly Seperable Data...*, James D.McC., viewed on 28th Apr 2021, https://jamesmccaffrey.wordpress.com/2019/04/27/
-- [4]   http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
-- [5]   https://www.mygreatlearning.com/blog/open-source-python-libraries/
-- [6]   https://cs231n.github.io/python-numpy-tutorial/#numpy
-- [7]   https://en.wikipedia.org/wiki/Pandas_(software)
-- [8]   https://matplotlib.org/
-- [9]   https://matplotlib.org/stable/tutorials/introductory/pyplot.html
-- [10]  https://seaborn.pydata.org/
-- [11]  https://realpython.com/python-import/
-- [12]  https://realpython.com/python-csv/
-- [13]  https://www.programiz.com/python-programming/file-operation
-- [14]  https://stackoverflow.com/questions/10200268/what-does-shape-do-in-for-i-in-rangey-shape0/21200291
-- [15]  https://www.geeksforgeeks.org/python-pandas-dataframe-columns/
-- [16]  https://www.w3schools.com/python/ref_string_join.asp
-- [17]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
-- [18]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
-- [19]  https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
-- [20]  https://note.nkmk.me/en/python-numpy-ndarray-ndim-shape-size/
-- [21]  https://stackoverflow.com/questions/29645153/remove-name-dtype-from-pandas-output-of-dataframe-or-series?noredirect=1
-- [22]  https://www.w3resource.com/pandas/dataframe/dataframe-head.php
-- [23]  https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
-- [24]  https://www.w3resource.com/numpy/manipulation/transpose.php
-- [25]  https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-- [26]  https://www.w3schools.com/python/python_functions.asp
-- [27]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
-- [28]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html
-- [29]  https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F
-- [30]  https://seaborn.pydata.org/generated/seaborn.barplot.html
-- [31]  https://en.wikipedia.org/wiki/Pie_chart
-- [32]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
-- [33]  https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html
-- [34]  https://matplotlib.org/stable/tutorials/intermediate/tight_layout_guide.html
-- [35]  http://www.learningaboutelectronics.com/Articles/How-to-create-a-pie-chart-in-matplotlib-with-Python.php
-- [36]  https://stackoverflow.com/questions/34094596/python-matplotlib-pyplot-pie-charts-how-to-remove-the-label-on-the-left-side
-- [37]  https://www.simplypsychology.org/boxplots.html
-- [38]  https://seaborn.pydata.org/generated/seaborn.boxplot.html
-- [39]  https://stackoverflow.com/questions/31726643/how-do-i-get-multiple-subplots-in-matplotlib
-- [40]  https://docs.cloudera.com/data-visualization/cloud/howto-visuals/topics/viz-visual-corr-heatmap.html
-- [41]  https://seaborn.pydata.org/generated/seaborn.heatmap.html
-- [42]  https://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotlib
-- [43]  https://en.wikipedia.org/wiki/Histogram
-- [44]  https://www.mathsisfun.com/data/histograms.html
-- [45]  https://seaborn.pydata.org/generated/seaborn.histplot.html
-- [46]  https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/a/scatterplots-and-correlation-review
-- [47]  https://seaborn.pydata.org/generated/seaborn.scatterplot.html
-- [48]  https://seaborn.pydata.org/generated/seaborn.pairplot.html
-- [49]  https://gist.github.com/curran/a08a1080b88344b0c8a7
+- [3]   www.jamesmccaffrey.wordpress.com, *The difference between Linearly Seperable Data...*, J.D.McCaffrey, viewed on 28th Apr 2021, https://jamesmccaffrey.wordpress.com/2019/04/27/
+- [4]   www.lac.inpe.br 2021, *Data Science Example - Iris Dataset*, Rafael Santos, viewed on 28th Mar 2021, http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
+- [5]   www.mygreatlearnings.com 2021, *Open-Source Python Libraries You Should Know About*, V. Advani, viewed on 29th Mar 2021, https://www.mygreatlearning.com/blog/open-source-python-libraries/
+- [6]   www.cs231n.github.io 2021, *Python Numpy Tutorial*, J.Johnson, viewed on 30 Mar 2021, https://cs231n.github.io/python-numpy-tutorial/#numpy
+- [7]   www.wikipedia.org 2021, *pandas (software)*, wikipedia, viewed on 30 Mar 2021, https://en.wikipedia.org/wiki/Pandas_(software)
+- [8]   www.maplotlib.org 2021, *Matplotlib: Visualisation with Python*, J.Hunter et al, viewed on 30 Mar 2021, https://matplotlib.org/
+- [9]   www.maplotlib. org 2021, *Pyplot tutorial*, J.Hunter et al, viewed on 30 Mar 2021, https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+- [10]  www.seaborn.pydata.org 2021, *Seaborn*, M.Waskom, viewed on 31 Mar 2021, https://seaborn.pydata.org/
+- [11]  www.realpython.com 2021, *Python import*, G.A.Hjelle, viewed on 30th Mar 2021, https://realpython.com/python-import/
+- [12]  www.realpython.com 2021, *Reading and Writing CSV Files in Python*, J.Fincher, viewed on 1st Apr 2021, https://realpython.com/python-csv/
+- [13]  www.programiz.com 2021, *Python File I/O*, Parewa Labs Pvt.Ltd., viewed on 1st Apr 2021, https://www.programiz.com/python-programming/file-operation
+- [14]  www.stockoverflow 2021, *What does.shape[] do...*, Stack Exchange (Head and Tail), viewed on 7th Apr 2021, https://stackoverflow.com/questions/10200268/what-does-shape-do-in-for-i-in-rangey-shape0/21200291
+- [15]  www.geeksforgeeks.org 2021, *Python|Pandas DataFrame.columns*, S.Ranjan, viewed on 7th Apr, https://www.geeksforgeeks.org/python-pandas-dataframe-columns/
+- [16]  www.w3schools.com 2021, *Python String join() Method*, Refsnes Data, viewed on 11th Apr 2021, https://www.w3schools.com/python/ref_string_join.asp
+- [17]  www.pandas.pydata.org 2021, *pandas.DataFrame.describe*, Pandas Dev team, viewed on 11th Apr 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+- [18]  www.pandas.pydata.org 2021, *pandas.DataFrame.loc*, Pandas Dev team, viewed on 11th Apr 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
+- [19]  www.geeksforgeeks.org 2021, *Python|Pandas dataframe.groupby()*, S.Ranjan, viewed on 11th Apr 2021, https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+- [20]  www.note.nkmk.me 2021, *NumPy:...*, nkmk.me, viewed on 11th Apr 2021, https://note.nkmk.me/en/python-numpy-ndarray-ndim-shape-size/
+- [21]  www.stockoverflow 2021, *Remove name, dtype from pandas output of dataframe or series*, Stack Exchange (ALollz), viewed on 11th Apr 2021, https://stackoverflow.com/questions/29645153/remove-name-dtype-from-pandas-output-of-dataframe-or-series?noredirect=1
+- [22]  www.w3resources.com 2021, *DataFrame - head() function*, w3resource.com, viewed on 11th Apr 2021, https://www.w3resource.com/pandas/dataframe/dataframe-head.php
+- [23]  www.pandas.pydata.org 2021, *pandas.DataFrame.sample*, Pandas Dev team, viewed on 11th Apr 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html
+- [24]  www.w3resources.com 2021, *NumPy Array manipulation: transpose() function*, w3resource.com, viewed on 11th Apr 2021, https://www.w3resource.com/numpy/manipulation/transpose.php
+- [25]  www.geeksforgeeks.org 2021, *Python|Pandas dataframe.corr()*, S.Ranjan, viewed on 11th Apr 2021, https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+- [26]  www.w3schools.com 2021, *Python Functions*, Refsnes Data, viewed on 28th Apr 2021,https://www.w3schools.com/python/python_functions.asp
+- [27]   www.maplotlib.org 2021, *matplotlib.pyplot.savefig*, J.Hunter et al, viewed on 21st Apr 2021, https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+- [28]  www.maplotlib.org 2021, *matplotlib.pyplot.show*, J.Hunter et al, viewed on 21st Apr 2021, https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html
+- [29]  www.wikipedia.org 2021, *List of colors: A-F*, wikipedia, viewed on 21st Apr 2021, https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F
+- [30]  www.seaborn.pydata.org 2021, *seaborn.barplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.barplot.html
+- [31]  www.wikipedia.org 2021, *Pie chart*, wikipedia, viewed on 21st Apr 2021,https://en.wikipedia.org/wiki/Pie_chart
+- [32]  www.maplotlib.org 2021, *matplotlib.pyplot.bar*, J.Hunter et al, viewed on 21st Apr 2021, https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
+- [33]  www.maplotlib.org 2021, *matplotlib.pyplot.pie*, J.Hunter et al, viewed on 21st Apr 2021, https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html
+- [34]  www.maplotlib.org 2021, *Tight Layout guide*, J.Hunter et al, viewed on 21st Apr 2021, https://matplotlib.org/stable/tutorials/intermediate/tight_layout_guide.html
+- [35]  www.learningaboutelectronics.com 2021, *How to Create a Pie Chart in Matplotlib with Python*, viewed on 21st Apr 2021, http://www.learningaboutelectronics.com/Articles/How-to-create-a-pie-chart-in-matplotlib-with-Python.php
+- [36]  www.stockoverflow 2021, *Python matplotlib.pyplot pie charts...*, Stack Exchange (tmdavison), viewed on 21st Apr 2021, https://stackoverflow.com/questions/34094596/python-matplotlib-pyplot-pie-charts-how-to-remove-the-label-on-the-left-side
+- [37]  www.simplypsychology.org 2021, *What does a box plot tell you?*, S.McLeod, viewed on 25th Apr, https://www.simplypsychology.org/boxplots.html
+- [38]  www.seaborn.pydata.org 2021, *seaborn.boxplot*, M.Waskom, viewed on 25th Apr 2021, https://seaborn.pydata.org/generated/seaborn.boxplot.html
+- [39]  www.stockoverflow 2021, *How do I get multiple subplots in matplotlib?*, Stack Exchange (K.A.Hooti), viewed on 19th Apr 2021, https://stackoverflow.com/questions/31726643/how-do-i-get-multiple-subplots-in-matplotlib
+- [40]  www.cloudera.com 2021, *Correlation heatmaps*, Cloudera Inc., viewed on 25th Apr 2021, https://docs.cloudera.com/data-visualization/cloud/howto-visuals/topics/viz-visual-corr-heatmap.html
+- [41]  www.seaborn.pydata.org 2021, *seaborn.heatmap*, M.Waskom, viewed on 25th Apr 2021, https://seaborn.pydata.org/generated/seaborn.heatmap.html
+- [42]  www.stockoverflow 2021, *Rotate axis text in python matplotlib*, Stack Exchange (scottlittle), viewed on 25th Apr 2021,https://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotlib
+- [43]  www.wikipedia.org 2021, *Histogram*, wikipedia, viewed on 21st Apr 2021, https://en.wikipedia.org/wiki/Histogram
+- [44]  www.mathisfun.com 2021, *Histograms*, MathisFun, viewed on 21st Apr 2021, https://www.mathsisfun.com/data/histograms.html
+- [45]  www.seaborn.pydata.org 2021, *seaborn.histplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.histplot.html
+- [46]  www.khanacademy.org 2021, *Scatterplots and correlation review*, Khan Academy, viewd on 21st Apr 2021, https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/a/scatterplots-and-correlation-review
+- [47]  www.seaborn.pydata.org 2021, *seaborn.scatterplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.scatterplot.html
+- [48]  www.seaborn.pydata.org 2021, *seaborn.pairplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.pairplot.html
+- [49]  www.gist.github.com 2021, *Readme*, curran, viewed on 31st Mar 2021, https://gist.github.com/curran/a08a1080b88344b0c8a7
 
 
 ### **OTHERS ANALYSIS**
