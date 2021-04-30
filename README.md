@@ -488,29 +488,41 @@ There are total of 12 possible scatterplots to be displayed from the given data 
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Sepal_width.png" />
 </p>
 
+It is clearly visible on this plot, but also on the plots below, how Setosa is easier to distinguish from the other two species. It confirms the statement from the introduction, which says that Setosa is linearly seperable from the other two species. Sepal width of Setosa is trending higher.
+
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_length.png" />
 </p>
+
+This plot, again, confirms Setosa flower is different to Versicolor and Virginica. Petal lenght of Setosa is much smaller then on the other flowers. Petal length of Virginica is trending high. Data is also more condensed here, for all three species.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length_vs_Petal_Width.png" />
 </p>
 
+The seperation of Setosa from the other two flowers is even more distinctive in this plot. Where not fully seperable, Versicolor and Virginica are also easier to distinguish then on the previous plots. Setosa has the smalles Petal width and Virginica the largest.
+
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_Width_vs_Petal_length.png" />
 </p>
+
+It's even more visible how Setosa has the widest Sepal, on this plot and once again we can see the clear difference between Setosa and the other two species, Virginica and Versicolor.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width_vs_Petal_width.png" />
 </p>
 
+Data on this plot is not as condensed when comparing Sepal width adn Petal length of the flowers. Petal lenght of Virginica is trending higher and once again we can clearly see how Setosa has the highest Sepal Width.
+
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png" />
 </p>
 
+Setosa data is very condensed when comparing two Petal variables. As on all previous plots, we can once more confirm that Setosa is lineraly seperable to the other two flowers. Both Petal Width and Petal Length of Setosa is trending lower.
+
 #### PAIRPLOT
 
-Pairplot is a very useful function in Seaborn. The simplest invocation displays scatterplot for each pairing of the variables and histplot for the marginal plots along the diagonal. It is used here as an overview for histagrams and scatterplots. [48]
+Pairplot is a very useful function in Seaborn. The simplest invocation displays scatterplot for each pairing of the variables and histplot for the marginal plots along the diagonal.[48]
 
 *CODE:*
 ```python
@@ -531,8 +543,11 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png" />
 </p>
 
+This plot serves as an overview of the scatterplot and histograms shown before in this analysis. There are 4 different attributes (variables) that were analysed, therefore 12 different scatterplots and 4 different histograms. There are 6 other scatterplots, with inverted axes included in this pairplot. Alos, blocks on histograms are not stacked up, but they overlap. It is effective way to show the separation of Setosa flower, compared to the other two flowers.
 
-## CONCLUSION
+## **CONCLUSION**
+
+We've seen how Python can be used to analyse the given data. It contains powerful libraries that require simple coding for analysis. It's been shown how (e.g. Machine Learning)
 
 ## **REFERENCES**
 
@@ -588,7 +603,7 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 - [49]  https://gist.github.com/curran/a08a1080b88344b0c8a7
 
 
-### *OTHER ANALYSIS**
+### **OTHERS ANALYSIS**
 
 1. http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html
 2. https://www.maplesoft.com/support/help/maple/view.aspx?path=examples/IrisData
@@ -599,3 +614,16 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 7. http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
 
 
+### **README FORMATTING**
+
+1. https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+2. https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md
+3. https://stackoverflow.com/questions/12090472/github-readme-md-center-image
+4. https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61
+
+
+TO DO:
+incode comments
+reference update
+conclusion
+scatterplot explanation
