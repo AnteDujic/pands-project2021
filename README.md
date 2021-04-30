@@ -1,7 +1,7 @@
 # PROGRAMING AND SCRIPTING | PROJECT | APRIL 2021
 ### AUTHOR: ANTE DUJIC
 
-This repository contains the analysis of the Iris Flower data set, written for a project for Programing and Scripting Module. The aim of the project is to show how Python can be used to do the analysis.
+This repository contains the analysis of the Iris Flower data set, done as a project for Programing and Scripting Module. The aim of the project is to show how Python can be used to do the analysis.
 
 ## **INTRODUCTION**
 
@@ -288,11 +288,12 @@ Petal Width (cm)            0.817954         -0.356544           0.962757       
 ### **DATASET VISUALISATION**
 
 Python, with its libraries, is a powerful tool for a data visualisation. There are multiple ways and aproaches but the following ones were deemed the best for the given data:
-- bar and pie plot
-- boxplot
+- bar plot and pie plot
+- boxplots
 - correlation heat map
 - histograms
-- scatter plots 
+- scatterplots
+- pairplot
 
 Each visual represantation (plot) has been defined as a function using *def* keyword. [26] Those functions are called at the end of the program. Mentioned plots have also been customized for the easier interpretation and a better visual appeal (e.g. titles, font size, color palette, etc.) Where there are multiple options available in Python for visual plot customization, minimum number was used to keep the code short and tidy. All plots are saved as .png images using *plt.savefig()* method. [27] Plots are also displayed using *plt.show()* to give a preview of how the saved images will look like. [28]
 
@@ -395,7 +396,7 @@ Correlation data outputted before into the *summary.txt* file was visualised usi
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/correlation.png" />
 </p>
 
-We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght. It is also visible that Sepal data varies more the the Petal data.
+We can see there is a very high correlation between Petal lenght and Petal width. Correlation between Sepal length and both Petal length and width is very high too. On the other side, we can see that Sepal width has negative correlation with all other variables (features), smallest with Sepal length and highest with Petal lenght. It is also visible that Sepal data varies more then the Petal data.
 
 #### HISTOGRAMS
 
@@ -429,7 +430,7 @@ Total of 4 histograms are displayed and saved individually. Data is set to be th
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_length.png" />
 </p>
 
-Sepal length values don't fluctuate as much as the othet values, which will be visible in the images below. We can see that mainly Setosa has the shortest Sepal, while Viginica has the longest. Virginica Sepal values varies the most.
+Sepal length values don't fluctuate as much as the other values, which will be visible in the images below. We can see that mainly Setosa has the shortest Sepal, while Viginica has the longest. Virginica Sepal values varies the most.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width.png" />
@@ -441,7 +442,7 @@ Sepal width values fluctuate more then Sepal length. It is visible there is the 
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_length.png" />
 </p>
 
-It is clearly visible there are the most flowers with the lowest value range, and those are Setosa. Virginica has the longest petal, but the number of the flowers in the highest range is the smallest of all.
+It is clearly visible there are the most flowers with the lowest value range, and those are Setosa. Virginica has the longest Petal, but the number of the flowers in the highest range is the smallest of all.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_width.png" />
@@ -480,7 +481,7 @@ def scatterlots():
 <summary>Code comments</summary>
 <br>
 
-There are total of 12 possible scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*. [47]
+There are total of 12 possible scatterplots to be displayed from the given data - 6 with different values and other 6 with those same values, but inverted axes. Only 6 were defined in the *scatterplot()* function and are displayed/saved individually. Code is very similar to the one on histagrams. Dataset is defined to be *data*, *x* and *y* axes are set up for each plot, as is the color *palette*. *hue* was again used to show the plot output by *Iris Species*. [47]
 
 </details>
 
@@ -506,13 +507,13 @@ The seperation of Setosa from the other two flowers is even more distinctive in 
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_Width_vs_Petal_length.png" />
 </p>
 
-It's even more visible how Setosa has the widest Sepal, on this plot and once again we can see the clear difference between Setosa and the other two species, Virginica and Versicolor.
+It's even more visible how Setosa has the widest Sepal on this plot and, once again, we can see the clear difference between Setosa and the other two species, Virginica and Versicolor.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Sepal_width_vs_Petal_width.png" />
 </p>
 
-Data on this plot is not as condensed when comparing Sepal width adn Petal length of the flowers. Petal lenght of Virginica is trending higher and once again we can clearly see how Setosa has the highest Sepal Width.
+Data on this plot is not as condensed when comparing Sepal width and Petal length of the flowers. Petal lenght of Virginica is trending higher and once again we can clearly see how Setosa has the highest Sepal Width.
 
 <p align="center">
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/Petal_Length_vs_Petal_width.png" />
@@ -543,7 +544,10 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
   <img src="https://github.com/AnteDujic/pands-project2021/blob/main/pairplot.png" />
 </p>
 
-This plot serves as an overview of the scatterplot and histograms shown before in this analysis. There are 4 different attributes (variables) that were analysed, therefore 12 different scatterplots and 4 different histograms. There are 6 other scatterplots, with inverted axes included in this pairplot. Alos, blocks on histograms are not stacked up, but they overlap. It is effective way to show the separation of Setosa flower, compared to the other two flowers.
+This plot serves as an overview of the scatterplot and histograms shown before in this analysis. There are 4 different attributes (variables) that were analysed, therefore 12 different scatterplots and 4 different histograms. There are 6 other scatterplots, with inverted axes included, in this pairplot. Also, blocks on histograms are not stacked up, but they overlap. We can see that pairplot is effective way to show the separation of Setosa flower, compared to the other two flowers.
+
+
+#### CALLING FUNCTIONS
 
 *CODE:*
 ```python
@@ -560,9 +564,11 @@ pairplot()
 
 For code written under the functions to be executed the functions have to be called. That is done by the name of the function we want to call.
 
+</details>
+
 ## **CONCLUSION**
 
-We've seen in this Readme file how Python can be used to analyse the data. It was first explained what the Iris Flower is and what its main characteristics are. It was then shown how program can be written in Python to analyse the given data in details and confirm what was stated in the Introduction. This analysis gave a better understanding of Python as a tool for data analysis but aslo a very good understanding of the Iris Flower dataset.
+This Readme file shows how Python can be used to analyse the data. It was first explained what the Iris Flower is and what its main characteristics are. It was then shown how program can be written in Python to analyse the given data in details and confirm what was stated in the Introduction. This analysis gave a better understanding of Python as a tool for data analysis but aslo a very good understanding of the Iris Flower dataset.
 
 ## **REFERENCES**
 
@@ -616,6 +622,7 @@ We've seen in this Readme file how Python can be used to analyse the data. It wa
 - [47]  www.seaborn.pydata.org 2021, *seaborn.scatterplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.scatterplot.html
 - [48]  www.seaborn.pydata.org 2021, *seaborn.pairplot*, M.Waskom, viewed on 21st Apr 2021, https://seaborn.pydata.org/generated/seaborn.pairplot.html
 - [49]  www.gist.github.com 2021, *Readme*, curran, viewed on 31st Mar 2021, https://gist.github.com/curran/a08a1080b88344b0c8a7
+- Iris flowers image | https://miro.medium.com/max/1000/1*Hh53mOF4Xy4eORjLilKOwA.png
 
 
 ### **OTHERS ANALYSIS**
