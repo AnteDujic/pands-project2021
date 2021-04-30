@@ -1,11 +1,11 @@
 # PROGRAMING AND SCRIPTING | PROJECT | APRIL 2021
 ### AUTHOR: ANTE DUJIC
 
-This repository contains the code written as a project for Programing and Scripting Module. The aim of the project is to show how Pyton can be used to analyse the Iris flower data set.
+This repository contains the analysis of the Iris Flower data set, written for a project for Programing and Scripting Module. The aim of the project is to show how Python can be used to do the analysis.
 
 ## **INTRODUCTION**
 
-The Iris flower data set, aslo called Fisher's Iris data set, is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in 1936. The dataset consists of 150 instances, made up of 50 samples each of 3 species of iris.[1]
+The Iris flower data set, also called Fisher's Iris data set, is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in 1936. The dataset consists of 150 instances, made up of 50 samples each of 3 species of iris.[1]
 
 There were 4 features measured from each sample:
 1. Sepal length in cm's
@@ -13,7 +13,7 @@ There were 4 features measured from each sample:
 3. Petal length in cm's
 4. Petal width in cm's
 
-Based on the combination of these four features, we can distinguish 3 species of iris:
+Based on the combination of these four features, we can distinguish 3 species of Iris:
 1. Iris Setosa
 2. Iris Versicolour
 3. Iris Virginica
@@ -27,7 +27,7 @@ The dataset is often used in data mining, classification and clustering examples
 
 ## **DATASET ANALYSIS**
 
-Iris Dataset has been analysed many times before, using various tools and approaches. Further down in this Readme file will be explained how Python can be used to achive the same. Dataset Analysis part consists of the codes used to analyse the data, explanation (comments) of the codes, their output and a brief explanation of the output - which should confirm what we've already learned about the Iris Flowers. It is important to say that the explanation of the code will be very detailed. Where it is not a practice to comment the "simple" code, the aim here is to show the understanding of the code used.
+Iris Dataset has been analysed many times before, using various tools and approaches. Further down in this Readme file will be explained how Python can be used to achive the same. Dataset Analysis part consists of the codes used to analyse the data, explanation (comments) of the codes, their output and a brief explanation of the output - which should also confirm what we've already learned about the Iris Flowers. It is important to say that the explanation of the code will be very detailed. Where it is not a practice to comment the "simple" code, the aim here is to show the understanding of the code used.
 
 ### **LIBRARIES**
 
@@ -49,7 +49,7 @@ import seaborn as sns
 <summary>Code comments</summary>
 <br>
 
-To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* [11] statement, at the start of the program. Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
+To allow the usage of the mentioned libaries they first need to be imported. That is done with *import* statement, at the start of the program. [11] Where it is not essential, it is a common practice to assign abbreviation for the each libary using *as* statement. This abbreviation will be used further in the program. 
 
 </details>
 
@@ -545,6 +545,21 @@ Code for pairplot is very similar to the other Seaborn plot codes. The *data*, *
 
 This plot serves as an overview of the scatterplot and histograms shown before in this analysis. There are 4 different attributes (variables) that were analysed, therefore 12 different scatterplots and 4 different histograms. There are 6 other scatterplots, with inverted axes included in this pairplot. Alos, blocks on histograms are not stacked up, but they overlap. It is effective way to show the separation of Setosa flower, compared to the other two flowers.
 
+*CODE:*
+```python
+speciesPlot()
+boxPlot()
+correlation()
+histograms()
+scatterlots()
+pairplot()
+```
+<details>
+<summary>Code comments</summary>
+<br>
+
+For code written under the functions to be executed the functions have to be called. That is done by the name of the function we want to call.
+
 ## **CONCLUSION**
 
 We've seen in this Readme file how Python can be used to analyse the data. It was first explained what the Iris Flower is and what its main characteristics are. It was then shown how program can be written in Python to analyse the given data in details and confirm what was stated in the Introduction. This analysis gave a better understanding of Python as a tool for data analysis but aslo a very good understanding of the Iris Flower dataset.
@@ -616,12 +631,7 @@ We've seen in this Readme file how Python can be used to analyse the data. It wa
 
 ### **README FORMATTING**
 
-1. https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
-2. https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md
-3. https://stackoverflow.com/questions/12090472/github-readme-md-center-image
-4. https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61
-
-
-TO DO:
-incode comments
-reference update
+1. Basic writing and formatting syntax | https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+2. Display images side by side | https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md
+3. Cener images | https://stackoverflow.com/questions/12090472/github-readme-md-center-image
+4. Dropdown | https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61
