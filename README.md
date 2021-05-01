@@ -1,7 +1,7 @@
-# PROGRAMING AND SCRIPTING | PROJECT | APRIL 2021
+# PROGRAMMING AND SCRIPTING | PROJECT | APRIL 2021
 ### AUTHOR: ANTE DUJIC
 
-This repository contains the analysis of the Iris Flower data set, done as a project for Programing and Scripting Module. The aim of the project is to show how Python can be used to do the analysis.
+This repository contains the analysis of the Iris Flower data set, done as a project for Programming and Scripting Module. The aim of the project is to show how Python can be used to do the analysis.
 
 ## **INTRODUCTION**
 
